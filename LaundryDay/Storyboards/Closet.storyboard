@@ -127,17 +127,24 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kJ-q9-0f2">
-                                            <rect key="frame" x="337" y="7" width="30" height="30"/>
-                                            <state key="normal" title="취소"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kJ-q9-0f2">
+                                            <rect key="frame" x="343" y="13.5" width="18" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="18" id="5Nb-HC-xZv"/>
+                                                <constraint firstAttribute="height" constant="18" id="HmX-Bz-55W"/>
+                                            </constraints>
+                                            <state key="normal" image="close"/>
                                             <connections>
                                                 <action selector="cancelButton_TUI:" destination="SeA-cP-D9v" eventType="touchUpInside" id="ucI-Em-CwY"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOg-Dt-eKz">
-                                            <rect key="frame" x="299" y="8" width="30" height="30"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                            <state key="normal" title="추가"/>
+                                        <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOg-Dt-eKz">
+                                            <rect key="frame" x="308" y="12.5" width="20" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="6FP-dv-7de"/>
+                                                <constraint firstAttribute="width" constant="20" id="e2c-SU-HgG"/>
+                                            </constraints>
+                                            <state key="normal" image="add"/>
                                             <connections>
                                                 <action selector="addListButton:" destination="SeA-cP-D9v" eventType="touchUpInside" id="rRw-ST-Lw7"/>
                                             </connections>
@@ -145,8 +152,8 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="7kJ-q9-0f2" firstAttribute="leading" secondItem="yOg-Dt-eKz" secondAttribute="trailing" constant="8" id="A5R-g4-xVG"/>
-                                        <constraint firstAttribute="trailing" secondItem="7kJ-q9-0f2" secondAttribute="trailing" constant="8" id="QM9-Ef-xHX"/>
+                                        <constraint firstItem="7kJ-q9-0f2" firstAttribute="leading" secondItem="yOg-Dt-eKz" secondAttribute="trailing" constant="15" id="A5R-g4-xVG"/>
+                                        <constraint firstAttribute="trailing" secondItem="7kJ-q9-0f2" secondAttribute="trailing" constant="14" id="QM9-Ef-xHX"/>
                                         <constraint firstItem="XeI-uZ-2Mj" firstAttribute="leading" secondItem="Et3-It-Lku" secondAttribute="leading" constant="8" id="RVR-kV-D7R"/>
                                         <constraint firstItem="7kJ-q9-0f2" firstAttribute="centerY" secondItem="Et3-It-Lku" secondAttribute="centerY" id="XjK-mh-3Id"/>
                                         <constraint firstItem="yOg-Dt-eKz" firstAttribute="centerY" secondItem="XeI-uZ-2Mj" secondAttribute="centerY" id="dBt-8m-Z3a"/>
@@ -252,7 +259,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="a3R-p5-g1q">
-                                                    <rect key="frame" x="54" y="119" width="46" height="41"/>
+                                                    <rect key="frame" x="53" y="113" width="47" height="47"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -279,7 +286,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-oP-eLr">
                                 <rect key="frame" x="0.0" y="30" width="375" height="607"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cUW-aC-y5B">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closet_none" translatesAutoresizingMaskIntoConstraints="NO" id="cUW-aC-y5B">
                                         <rect key="frame" x="87.5" y="178.5" width="200" height="250"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="250" id="72V-uE-scs"/>
@@ -306,26 +313,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="niO-ep-TNN">
                                 <rect key="frame" x="0.0" y="20" width="375" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-Rl-aag">
-                                        <rect key="frame" x="8" y="5" width="30" height="30"/>
-                                        <state key="normal" title="옷장">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL7-Rl-aag">
+                                        <rect key="frame" x="12" y="10" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="F5W-et-utL"/>
+                                            <constraint firstAttribute="width" constant="20" id="WcW-cz-I2a"/>
+                                        </constraints>
+                                        <state key="normal" image="menu">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
                                             <action selector="openClosetList:" destination="xsJ-hG-bxR" eventType="touchUpInside" id="de4-3s-T7e"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-jZ-T6u">
-                                        <rect key="frame" x="337" y="7.5" width="30" height="26"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-jZ-T6u">
+                                        <rect key="frame" x="341" y="9.5" width="22" height="22"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="4gv-g4-vCX"/>
-                                            <constraint firstAttribute="height" constant="26" id="aqL-ho-YSD"/>
+                                            <constraint firstAttribute="width" constant="22" id="4gv-g4-vCX"/>
+                                            <constraint firstAttribute="height" constant="22" id="aqL-ho-YSD"/>
                                         </constraints>
                                         <state key="normal" image="like"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-Al-Fun">
-                                        <rect key="frame" x="277" y="5" width="52" height="30"/>
-                                        <state key="normal" title="추가하기">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-Al-Fun">
+                                        <rect key="frame" x="306" y="10.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="J0o-Q2-RPI"/>
+                                            <constraint firstAttribute="width" constant="20" id="OdP-vy-DZL"/>
+                                        </constraints>
+                                        <state key="normal" image="add">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
@@ -335,12 +350,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.28235294117647058" green="0.7803921568627451" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="sL7-Rl-aag" firstAttribute="leading" secondItem="niO-ep-TNN" secondAttribute="leading" constant="8" id="5Z5-cD-r6M"/>
+                                    <constraint firstItem="sL7-Rl-aag" firstAttribute="leading" secondItem="niO-ep-TNN" secondAttribute="leading" constant="12" id="5Z5-cD-r6M"/>
                                     <constraint firstItem="IKQ-Al-Fun" firstAttribute="centerY" secondItem="niO-ep-TNN" secondAttribute="centerY" id="LpM-wD-bwh"/>
                                     <constraint firstItem="Tfk-jZ-T6u" firstAttribute="centerY" secondItem="sL7-Rl-aag" secondAttribute="centerY" id="cmq-ND-lQw"/>
                                     <constraint firstItem="sL7-Rl-aag" firstAttribute="centerY" secondItem="niO-ep-TNN" secondAttribute="centerY" id="ky3-i1-gBL"/>
-                                    <constraint firstAttribute="trailing" secondItem="Tfk-jZ-T6u" secondAttribute="trailing" constant="8" id="piQ-Be-NjB"/>
-                                    <constraint firstItem="Tfk-jZ-T6u" firstAttribute="leading" secondItem="IKQ-Al-Fun" secondAttribute="trailing" constant="8" id="xUo-5E-42h"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tfk-jZ-T6u" secondAttribute="trailing" constant="12" id="piQ-Be-NjB"/>
+                                    <constraint firstItem="Tfk-jZ-T6u" firstAttribute="leading" secondItem="IKQ-Al-Fun" secondAttribute="trailing" constant="15" id="xUo-5E-42h"/>
                                     <constraint firstAttribute="height" constant="40" id="xwh-hn-7pq"/>
                                 </constraints>
                             </view>
@@ -1269,9 +1284,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="49" height="49"/>
+        <image name="close" width="45" height="45"/>
+        <image name="closet_none" width="184" height="194"/>
         <image name="default" width="1290" height="1290"/>
-        <image name="like" width="46" height="41"/>
-        <image name="likeSelected" width="46" height="41"/>
+        <image name="like" width="47" height="47"/>
+        <image name="likeSelected" width="47" height="47"/>
+        <image name="menu" width="48" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4pi-Jz-tGw"/>
