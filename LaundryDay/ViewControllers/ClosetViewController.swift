@@ -29,12 +29,18 @@ class ClosetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //네비게이션바 색조정
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+
         
         collectionView.dataSource = self
         collectionView.delegate = self
         fetchUser()
         checkClosetId(closetID: closetId)
         
+        //옷 하나도 없을때 이미지뷰
         noItemView.isHidden = true
         
         
@@ -258,5 +264,19 @@ extension ClosetViewController: AddClothesViewControllerDelegate {
     func changeClosetIdToAll(id: String) {
         self.closetId = id
         checkClosetId(closetID: closetId)
+    }
+}
+extension UIColor {
+    
+    /// Converts this `UIColor` instance to a 1x1 `UIImage` instance and returns it.
+    ///
+    /// - Returns: `self` as a 1x1 `UIImage`.
+    func as1ptImage() -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        setFill()
+        UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
+        UIGraphicsEndImageContext()
+        return image
     }
 }
