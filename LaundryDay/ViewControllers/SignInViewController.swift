@@ -47,7 +47,8 @@ class SignInViewController: UIViewController {
             return
         }
         signInButton.isEnabled = true
-        signInButton.backgroundColor = UIColor.darkGray
+        signInButton.backgroundColor = UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1)
+
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

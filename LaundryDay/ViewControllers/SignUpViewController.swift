@@ -28,7 +28,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userProfileImage.layer.cornerRadius = 50
+        
         
         //디폴트이미지 누르면 이미지 선택하도록
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleSelectProfileImage))
@@ -60,7 +60,7 @@ class SignUpViewController: UIViewController {
             return
         }
         signUpButton.isEnabled = true
-        signUpButton.backgroundColor = UIColor.darkGray
+        signUpButton.backgroundColor = UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1)
 
     }
     

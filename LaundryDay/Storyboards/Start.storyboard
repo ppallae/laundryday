@@ -65,6 +65,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zGb-6H-fBU" firstAttribute="centerX" secondItem="YDk-IU-eEc" secondAttribute="centerX" id="1f9-Yd-2f6"/>
                             <constraint firstItem="iJ7-oH-U7s" firstAttribute="top" secondItem="OV7-7s-u9Y" secondAttribute="bottom" constant="53.5" id="2gi-MU-ann"/>
@@ -186,6 +187,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vNL-lA-RBR" firstAttribute="centerX" secondItem="MWl-A4-YIU" secondAttribute="centerX" id="0DW-Mt-m2V"/>
                             <constraint firstItem="jV2-6B-tpY" firstAttribute="centerX" secondItem="MWl-A4-YIU" secondAttribute="centerX" id="4PD-eE-ZwY"/>

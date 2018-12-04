@@ -72,7 +72,7 @@ class ClosetViewController: UIViewController {
     func fetchUser() {
         Api.User.observeCurrentUser(completion: {user in
             self.user = user
-            reloadData()
+            self.reloadData()
         })
         print("fetchUser 실행")
     }
@@ -86,14 +86,14 @@ class ClosetViewController: UIViewController {
                 if self.isShowingLikeItems {
                     if clothes.isLiked != nil && clothes.isLiked! {
                         self.items.insert(clothes, at: 0)
-                        reloadData()
+                        self.reloadData()
                     } else {
                         print("no items")
-                        reloadData()
+                        self.reloadData()
                     }
                 } else {
                     self.items.insert(clothes, at: 0)
-                    reloadData()
+                    self.reloadData()
                 }
 
             })
@@ -102,13 +102,13 @@ class ClosetViewController: UIViewController {
             let snapId = snap.key
             if let index = self.items.index(where: {(item)-> Bool in item.id == snapId}) {
                 self.items.remove(at: index)
-                reloadData()
+                self.reloadData()
             }
         })
     }
     //아이템 비어있을때 이미지 보여줄 것
     func reloadData() {
-        if self.items.count = 0 {
+        if self.items.count == 0 {
             noItemView.isHidden = false
             
         } else {
