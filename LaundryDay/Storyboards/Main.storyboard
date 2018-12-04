@@ -14,10 +14,18 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u5p-Dr-feJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6QZ-kn-i4O">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="6QZ-kn-i4O">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="t2Y-Ec-gpR" kind="relationship" relationship="viewControllers" id="VFS-uN-H4O"/>
@@ -61,7 +69,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tab_closet_selected" width="17" height="10"/>
-        <image name="tab_profile_selected" width="17" height="17"/>
+        <image name="tab_closet_selected" width="26" height="17"/>
+        <image name="tab_profile_selected" width="25" height="25"/>
     </resources>
 </document>
