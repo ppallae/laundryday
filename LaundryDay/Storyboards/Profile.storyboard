@@ -236,7 +236,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-Bd-BPA">
-                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="478"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="HPL-8E-ZaO"/>
@@ -441,12 +441,15 @@
             </objects>
             <point key="canvasLocation" x="4404" y="2637"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Rvp-87-ZYt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ui-SC-d2S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QnN-iY-SD0"/>
+                    <tabBarItem key="tabBarItem" title="" image="tab_profile_selected" id="QnN-iY-SD0">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ugb-24-8AT">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -493,6 +496,7 @@
     </scenes>
     <resources>
         <image name="art_1524014029" width="550" height="242"/>
-        <image name="like" width="46" height="41"/>
+        <image name="like" width="47" height="47"/>
+        <image name="tab_profile_selected" width="25" height="25"/>
     </resources>
 </document>

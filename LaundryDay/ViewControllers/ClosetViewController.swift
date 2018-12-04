@@ -34,6 +34,7 @@ class ClosetViewController: UIViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
         
+        
         //collectionview 옆으로 띄우기
         collectionView.contentInset.right = 20
         collectionView.contentInset.left = 20
