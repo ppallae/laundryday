@@ -136,6 +136,7 @@ class AddClothesViewController: UIViewController {
         vc?.view.frame.size.width = 300
         vc?.view.frame.size.height = 500
         vc?.view.center = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
+        vc?.view.dropShadow()
         
     }
     
@@ -220,6 +221,23 @@ extension AddClothesViewController: UIImagePickerControllerDelegate, UINavigatio
             productImageView.image = image
         }
         dismiss(animated: true, completion: nil)
+    }
+}
+
+
+extension UIView {
+    
+    //뷰에 새도우 넣기
+    func dropShadow(scale: Bool = true) {
+        layer.masksToBounds = false
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 1, height: 1)
+        layer.shadowRadius = 1
+        
+        layer.shadowPath = UIBezierPath(rect: bounds).cgPath
+        layer.shouldRasterize = true
+        layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 }
 
