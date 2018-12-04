@@ -29,6 +29,9 @@ class DetailViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = true
         loadItem()
         addTapGesture()
+        
+        //var rightButton = UIBarButtonItem(image: UIImage(named: "more.png"), style: .plain, target: self, action: #selector(self.singleTapAction))
+        //self.navigationItem.rightBarButtonItem = rightButton
 
         
     }
@@ -80,7 +83,7 @@ class DetailViewController: UIViewController {
         displayChildViewController(vc: vc!)
         view.addSubview((vc?.view)!)
         vc?.didMove(toParentViewController: self)
-        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 100, width: self.view.frame.width, height: 100)
+        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 70 , width: self.view.frame.width, height: 100)
         // iphone X 일 경우 y 이상하다
     }
     func displayChildViewController(vc: UIViewController) {

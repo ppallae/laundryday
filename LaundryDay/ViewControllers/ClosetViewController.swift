@@ -33,7 +33,7 @@ class ClosetViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
-        
+        //navigationController?.navigationBar.isHidden = true
         
         //collectionview 옆으로 띄우기
         collectionView.contentInset.right = 20
