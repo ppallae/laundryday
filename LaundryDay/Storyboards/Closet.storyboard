@@ -533,7 +533,7 @@
                                                     <constraint firstAttribute="width" constant="180" id="xMl-eH-j19"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O5z-j2-g4y">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="O5z-j2-g4y">
                                                 <rect key="frame" x="252" y="393.5" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="25" id="c8l-5f-ok0"/>
@@ -637,35 +637,35 @@
                                                 </constraints>
                                                 <viewLayoutGuide key="safeArea" id="jy1-Lr-sg1"/>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="825-cy-mLu">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dry_none" translatesAutoresizingMaskIntoConstraints="NO" id="825-cy-mLu">
                                                 <rect key="frame" x="87" y="602.5" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Ahc-2U-cGf"/>
                                                     <constraint firstAttribute="width" constant="60" id="fum-s0-Qla"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qve-4L-9xW">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="washable_none" translatesAutoresizingMaskIntoConstraints="NO" id="qve-4L-9xW">
                                                 <rect key="frame" x="159" y="602.5" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="rAU-Pm-slr"/>
                                                     <constraint firstAttribute="height" constant="60" id="vl9-Nu-h0n"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eJW-gH-k6r">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironing_none" translatesAutoresizingMaskIntoConstraints="NO" id="eJW-gH-k6r">
                                                 <rect key="frame" x="87" y="670.5" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="2uA-vn-46y"/>
                                                     <constraint firstAttribute="height" constant="60" id="Z9h-El-ZlV"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qkY-nb-8S7">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drycleaning_none" translatesAutoresizingMaskIntoConstraints="NO" id="qkY-nb-8S7">
                                                 <rect key="frame" x="159" y="670.5" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="9Ca-Cq-VPs"/>
                                                     <constraint firstAttribute="height" constant="60" id="n1R-fx-M8N"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-rO-Slb">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bleaching_none" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-rO-Slb">
                                                 <rect key="frame" x="231" y="670.5" width="60" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="5Yn-J8-oHg"/>
