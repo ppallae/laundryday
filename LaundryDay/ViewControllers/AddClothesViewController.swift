@@ -15,6 +15,11 @@ class AddClothesViewController: UIViewController {
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameTextField: UITextField!
     
+    @IBOutlet weak var brandNameTextField: UITextField!
+    @IBOutlet weak var productTagNameTextField: UITextField!
+    @IBOutlet weak var purchasedDate: UITextField!
+    @IBOutlet weak var materialTextField: UITextField!
+    
     @IBOutlet weak var drySymbol: UIImageView!
     @IBOutlet weak var washableSymbol: UIImageView!
     @IBOutlet weak var ironingSymbol: UIImageView!
@@ -37,6 +42,12 @@ class AddClothesViewController: UIViewController {
         //세탁기호선택
         addtapGestureInSymbols()
         
+        //이름입력해야 추가하기버튼 활성화
+        uploadButton.isEnabled = false
+        uploadButton.backgroundColor = UIColor.lightGray
+        uploadButton.setTitleColor(.white, for: .disabled)
+        uploadButton.setTitleColor(.black, for: .normal)
+        handleTextField()
         
         
     }
@@ -148,11 +159,32 @@ class AddClothesViewController: UIViewController {
                 })
             
         } else {
-            ProgressHUD.showError("Profile Image should be selected.")
+            ProgressHUD.showError("사진을 선택해주세요.")
         }
     
         
     }
+    
+    
+    func handleTextField() {
+        productNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        //brandNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        //productTagNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        //purchasedDate.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        
+    }
+    
+    @objc func textFieldChanged() {
+        guard  let productName = productNameTextField.text, !productName.isEmpty /*, let password = userPasswordTextField.text, !password.isEmpty, let name = userNameTextField.text, !name.isEmpty, let contact = userContactTextField.text, !contact.isEmpty */ else {
+            uploadButton.isEnabled = false
+            uploadButton.backgroundColor = UIColor.lightGray
+            return
+        }
+        uploadButton.isEnabled = true
+        uploadButton.backgroundColor = UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1)
+        
+    }
+    
     
     
     //추가하기 창 취소
