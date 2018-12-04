@@ -33,8 +33,13 @@ class ClosetViewController: UIViewController {
         navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = false
-
         
+        //collectionview 옆으로 띄우기
+        collectionView.contentInset.right = 20
+        collectionView.contentInset.left = 20
+        collectionView.contentInset.top = 15
+        
+        //collectionview 데이터 연결
         collectionView.dataSource = self
         collectionView.delegate = self
         fetchUser()
@@ -238,17 +243,20 @@ extension ClosetViewController: UICollectionViewDataSource {
     }
 }
 
+
 extension ClosetViewController: UICollectionViewDelegateFlowLayout {
+    //collectionView cell 양옆 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
+    //collectionView cell 상하 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 15
     }
     //사진 사이즈
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width / 3 - 2, height: 150)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.size.width / 3 - 2, height: 150)
+//    }
     
 }
 
