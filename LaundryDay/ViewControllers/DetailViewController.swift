@@ -62,6 +62,13 @@ class DetailViewController: UIViewController {
         self.productTagNameTextView.text = item?.productTagName
         self.purchasedDate.text = item?.purchasedDate
         self.materialTextView.text = item?.material
+        
+        self.drySymbol.image = UIImage(named: (item!.washSymbolList![0]))
+        self.washableSymbol.image = UIImage(named: item!.washSymbolList![1])
+        self.ironingSymbol.image = UIImage(named: item!.washSymbolList![2])
+        self.dryCleaningSymbol.image = UIImage(named: item!.washSymbolList![3])
+        self.bleachingSymbol.image = UIImage(named: item!.washSymbolList![4])
+        
         if let photoUrlString = item!.productImgUrl {
             let photoUrl = URL(string: photoUrlString)
             self.productImageView.sd_setImage(with: photoUrl)

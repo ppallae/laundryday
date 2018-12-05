@@ -32,7 +32,7 @@ class AddClothesViewController: UIViewController {
     
     var selectedImage: UIImage?
     var selectedImageView: UIImageView?
-    var symbolList = ["none","none","none","none","none"]
+    var symbolList = ["dry_none","washable_none","ironing_none","drycleaning_none","bleaching_none"]
     var symbolListNum = 0
     
     
@@ -164,7 +164,7 @@ class AddClothesViewController: UIViewController {
 //
 //                ClosetListViewController.removeViewController(childVC: self)
                 TimeDelay.runThisAfterDelay(seconds: 0.5){
-                    self.symbolList = ["none","none","none","none","none"]
+                    self.symbolList = ["dry_none","washable_none","ironing_none","drycleaning_none","bleaching_none"]
                     self.dismiss(animated: true, completion: nil)
                 }
                 //self.dismiss(animated: true, completion: nil)
