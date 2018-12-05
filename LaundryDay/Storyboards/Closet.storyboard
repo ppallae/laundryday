@@ -1257,6 +1257,9 @@
                                                 <state key="normal" title="수정하기">
                                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="uploadButton_TUI:" destination="kd5-YT-W0W" eventType="touchUpInside" id="0i1-Qb-Y9U"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1469,6 +1472,20 @@
                         <viewLayoutGuide key="safeArea" id="jEF-xQ-3x3"/>
                     </view>
                     <size key="freeformSize" width="375" height="1050"/>
+                    <connections>
+                        <outlet property="bleachingSymbol" destination="36J-nE-NbU" id="m9q-1e-VAB"/>
+                        <outlet property="brandNameTextField" destination="Wef-dk-tae" id="N01-qR-s4Q"/>
+                        <outlet property="dryCleaningSymbol" destination="ug1-id-kzY" id="dkj-kR-eGR"/>
+                        <outlet property="drySymbol" destination="oSw-fX-wxX" id="Xe6-Ym-Bto"/>
+                        <outlet property="ironingSymbol" destination="sta-CN-1rF" id="ZsL-MX-Zwe"/>
+                        <outlet property="materialTextField" destination="EgU-7R-Cio" id="GsL-2e-lpr"/>
+                        <outlet property="productImageView" destination="bOc-Dj-xrc" id="zgg-T9-Cb1"/>
+                        <outlet property="productNameLabel" destination="BVK-Ob-sfp" id="vam-3o-1Yf"/>
+                        <outlet property="productTagNameTextField" destination="UTZ-nF-8bn" id="Kh8-Ui-y7Z"/>
+                        <outlet property="purchasedDate" destination="UvG-yn-XYq" id="G5h-Pa-vju"/>
+                        <outlet property="uploadBtn" destination="JUT-ZP-YEH" id="jli-Vr-IL3"/>
+                        <outlet property="washableSymbol" destination="cfp-It-zwD" id="rxy-vK-b2m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7t-52-tyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

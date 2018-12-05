@@ -96,7 +96,45 @@ class HelperService {
         })
     }
     
-   
+    //MARK: -change clothes Image
+    static func updateClothesImage(data: Data,clothesID: String, onSuccess: @escaping () -> Void) {
+        let imageString = NSUUID().uuidString
+        let storageRef = Storage.storage().reference(forURL: Config.STROAGE_ROOT_REF).child("items").child(imageString)
+        storageRef.putData(data, metadata: nil) { (metadata,error) in
+            if error != nil {
+                ProgressHUD.showError(error?.localizedDescription)
+                return
+            }
+            let productImgURL = metadata?.downloadURL()?.absoluteString
+            self.sendClothesImage(imageString:imageString,productImgUrl: productImgURL!,clothesID: clothesID,onSuccess: onSuccess)
+            
+        }
+    }
+    static func sendClothesImage(imageString:String,productImgUrl:String,clothesID:String,  onSuccess: @escaping ()->Void) {
+        
+        let newClothesRef = Api.Clothes.REF_ITEMS.child(clothesID)
+        newClothesRef.updateChildValues(["imageString":imageString,"productImgUrl":productImgUrl] ,withCompletionBlock: { error, ref in
+            if error != nil {
+                ProgressHUD.showError(error?.localizedDescription)
+                return
+            }
+            onSuccess()
+        })
+        
+    }
+    
+    
+    //MARK: -change clothes Text Data
+    static func sendClothesText(clothesID: String,productName:String, brandName: String, productTagName: String, purchasedDate: String, material:String, washSymbolList: [String], onSuccess: @escaping ()->Void) {
+        let newClothesRef = Api.Clothes.REF_ITEMS.child(clothesID)
+        newClothesRef.updateChildValues(["productName": productName, "brandName": brandName, "productTagName": productTagName, "purchasedDate": purchasedDate, "material": material, "washSymbolList": washSymbolList], withCompletionBlock: { error, ref in
+            if error != nil {
+                ProgressHUD.showError(error?.localizedDescription)
+                return
+            }
+            onSuccess()
+        })
+    }
     
     
 }

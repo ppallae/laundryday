@@ -63,6 +63,16 @@ class DetailEditingViewController: UIViewController {
         performSegue(withIdentifier: "EditClothesViewController", sender: self)
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditClothesViewController" {
+            let editVC = segue.destination as! EditClothesViewController
+            editVC.clothesId = self.clothesId
+            
+            
+        }
+
+    }
 
     
 
