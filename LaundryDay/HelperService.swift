@@ -12,7 +12,7 @@ import ProgressHUD
 
 class HelperService {
     //MARK: -add clothes
-    static func updataToServer(data: Data, productName: String, onSuccess: @escaping () -> Void) {
+    static func updataToServer(data: Data, productName: String,brandName: String, productTagName: String, purchasedDate: String, onSuccess: @escaping () -> Void) {
         
         let imageString = NSUUID().uuidString
         let storageRef = Storage.storage().reference(forURL: Config.STROAGE_ROOT_REF).child("items").child(imageString)
@@ -22,18 +22,18 @@ class HelperService {
                 return
             }
             let productImgURL = metadata?.downloadURL()?.absoluteString
-            self.sendDataToDatabase(imageString: imageString,productImgURL: productImgURL!, productName: productName, onSuccess: onSuccess)
+            self.sendDataToDatabase(imageString: imageString,productImgURL: productImgURL!, productName: productName, brandName: brandName,productTagName:productTagName,purchasedDate:purchasedDate, onSuccess: onSuccess)
 
         }
     }
-    static func sendDataToDatabase(imageString:String,productImgURL:String, productName:String, onSuccess: @escaping ()->Void) {
+    static func sendDataToDatabase(imageString:String,productImgURL:String, productName:String, brandName: String, productTagName: String, purchasedDate: String,  onSuccess: @escaping ()->Void) {
         let newClothesID = Api.Clothes.REF_ITEMS.childByAutoId().key
         let newClothesRef = Api.Clothes.REF_ITEMS.child(newClothesID)
         guard let currentUser = Api.User.CURRENT_USER else{
             return
     }
         let currentUserID = currentUser.uid
-        newClothesRef.setValue(["imageString": imageString, "productImgUrl":productImgURL, "productName": productName, "uid": currentUserID /*, "isLiked": false*/], withCompletionBlock: {(error, ref) in
+        newClothesRef.setValue(["imageString": imageString, "productImgUrl":productImgURL, "productName": productName, "brandName": brandName, "productTagName": productTagName, "purchasedDate": purchasedDate, "uid": currentUserID /*, "isLiked": false*/], withCompletionBlock: {(error, ref) in
             if error != nil {
                 ProgressHUD.showError(error?.localizedDescription)
                 return

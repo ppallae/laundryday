@@ -26,6 +26,7 @@ class AddClothesViewController: UIViewController {
     @IBOutlet weak var dryCleaningSymbol: UIImageView!
     @IBOutlet weak var bleachingSymbol: UIImageView!
     
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var uploadButton: UIButton!
     
@@ -147,7 +148,7 @@ class AddClothesViewController: UIViewController {
     @IBAction func uploadButton_TUI(_ sender: Any) {
         ProgressHUD.show("Waiting")
         if let productImg = self.selectedImage, let imageData = UIImageJPEGRepresentation(productImg, 0.1) {
-            HelperService.updataToServer(data: imageData, productName: productNameTextField.text!, onSuccess: {
+            HelperService.updataToServer(data: imageData, productName: productNameTextField.text!, brandName: brandNameTextField.text!, productTagName: productTagNameTextField.text!, purchasedDate: purchasedDate.text!, onSuccess: {
 //                if (self.delegate != nil) {
 //                    self.delegate?.changeClosetIdToAll(id: "All")
 //                }
@@ -169,14 +170,14 @@ class AddClothesViewController: UIViewController {
     
     func handleTextField() {
         productNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
-        //brandNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
-        //productTagNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
-        //purchasedDate.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        brandNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        productTagNameTextField.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
+        purchasedDate.addTarget(self, action: #selector(self.textFieldChanged), for: UIControlEvents.editingChanged)
         
     }
     
     @objc func textFieldChanged() {
-        guard  let productName = productNameTextField.text, !productName.isEmpty /*, let password = userPasswordTextField.text, !password.isEmpty, let name = userNameTextField.text, !name.isEmpty, let contact = userContactTextField.text, !contact.isEmpty */ else {
+        guard  let productName = productNameTextField.text, !productName.isEmpty , let password = brandNameTextField.text, !password.isEmpty, let name = purchasedDate.text, !name.isEmpty, let contact = productTagNameTextField.text, !contact.isEmpty  else {
             uploadButton.isEnabled = false
             uploadButton.backgroundColor = UIColor.lightGray
             return
@@ -219,6 +220,7 @@ extension AddClothesViewController: UIImagePickerControllerDelegate, UINavigatio
         if let image = info["UIImagePickerControllerOriginalImage"] as? UIImage {
             selectedImage = image
             productImageView.image = image
+            descriptionLabel.text = ""
         }
         dismiss(animated: true, completion: nil)
     }

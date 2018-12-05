@@ -1086,6 +1086,7 @@
                         <outlet property="bleachingSymbol" destination="r8E-Ew-WIH" id="GZP-ZF-VRS"/>
                         <outlet property="brandNameTextField" destination="FO6-IU-rs5" id="7kh-EK-NjF"/>
                         <outlet property="cancelButton" destination="qDD-BX-HAG" id="HWA-fp-cFp"/>
+                        <outlet property="descriptionLabel" destination="0r2-IS-GuP" id="1jn-HJ-q7N"/>
                         <outlet property="dryCleaningSymbol" destination="QeN-cg-mGe" id="wzJ-vt-ywK"/>
                         <outlet property="drySymbol" destination="E22-hc-Eqr" id="p8H-I8-OUL"/>
                         <outlet property="ironingSymbol" destination="fa5-Df-emI" id="beE-Qv-B8w"/>
