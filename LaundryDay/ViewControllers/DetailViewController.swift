@@ -31,6 +31,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var likeImageView: UIImageView!
     
     var instantVC: UIViewController?
+    
+    //for scrollView
+    var lastContentOffset: CGFloat = 0
+    
     var uid: String?
     var itemId: String?
     var item: Clothes? {
@@ -44,6 +48,7 @@ class DetailViewController: UIViewController {
         loadItem()
         addTapGesture()
         
+        
         //var rightButton = UIBarButtonItem(image: UIImage(named: "more.png"), style: .plain, target: self, action: #selector(self.singleTapAction))
         //self.navigationItem.rightBarButtonItem = rightButton
 
@@ -52,6 +57,7 @@ class DetailViewController: UIViewController {
         productTagNameTextView.isUserInteractionEnabled = false
         purchasedDate.isUserInteractionEnabled = false
         materialTextView.isUserInteractionEnabled = false
+        
         
     }
     
@@ -151,7 +157,7 @@ class DetailViewController: UIViewController {
         displayChildViewController(vc: vc!)
         view.addSubview((vc?.view)!)
         vc?.didMove(toParentViewController: self)
-        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 70 , width: self.view.frame.width, height: 100)
+        vc?.view.frame = CGRect(x: self.view.frame.width - 50, y: 0 , width: 50, height: 50)
         
     }
     
@@ -168,6 +174,6 @@ class DetailViewController: UIViewController {
         content.removeFromParentViewController()
     }
     
-
-
+    
 }
+
