@@ -14,12 +14,9 @@ class Clothes  {
     var brandName: String?
     var productTagName: String?
     var purchasedDate: String?
+    var material: String?
     
-    var drySymbol: String?
-    var washableSymbol: String?
-    var ironingSymbol: String?
-    var dryCleaningSymbol: String?
-    var bleachingSymbol: String?
+    var washSymbolList: [String]?
     
     var uid: String?
     var id: String?
@@ -37,12 +34,9 @@ extension Clothes {
         clothes.brandName = dict["brandName"] as? String
         clothes.productTagName = dict["brandName"] as? String
         clothes.purchasedDate = dict["brandName"] as? String
+        clothes.material = dict["material"] as? String
         
-        clothes.drySymbol = dict["brandName"] as? String
-        clothes.washableSymbol = dict["brandName"] as? String
-        clothes.ironingSymbol = dict["brandName"] as? String
-        clothes.dryCleaningSymbol = dict["brandName"] as? String
-        clothes.bleachingSymbol = dict["brandName"] as? String
+        clothes.washSymbolList = dict["washSymbolList"] as? [String]
         
         clothes.uid = dict["uid"] as? String
         clothes.id = key
