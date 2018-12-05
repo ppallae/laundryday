@@ -32,6 +32,10 @@ class AddClothesViewController: UIViewController {
     
     var selectedImage: UIImage?
     var selectedImageView: UIImageView?
+    var symbolList = ["none","none","none","none","none"]
+    var symbolListNum = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -107,22 +111,27 @@ class AddClothesViewController: UIViewController {
         case 11:
             theme = "dry"
             list = Api.WashSymbols.drySymbol
+            symbolListNum = 0
             selectedImageView = gesture as? UIImageView
         case 12:
             theme = "washable"
             list = Api.WashSymbols.washableSymbol
+            symbolListNum = 1
             selectedImageView = gesture as? UIImageView
         case 13:
             theme = "ironing"
             list = Api.WashSymbols.ironingSymbol
+            symbolListNum = 2
             selectedImageView = gesture as? UIImageView
         case 14:
             theme = "dryCleaning"
             list = Api.WashSymbols.dryCleaningSymbol
+            symbolListNum = 3
             selectedImageView = gesture as? UIImageView
         case 15:
             theme = "bleaching"
             list = Api.WashSymbols.bleachingSymbol
+            symbolListNum = 4
             selectedImageView = gesture as? UIImageView
         default:
             theme = "none"
@@ -155,6 +164,7 @@ class AddClothesViewController: UIViewController {
 //
 //                ClosetListViewController.removeViewController(childVC: self)
                 TimeDelay.runThisAfterDelay(seconds: 0.5){
+                    self.symbolList = ["none","none","none","none","none"]
                     self.dismiss(animated: true, completion: nil)
                 }
                 //self.dismiss(animated: true, completion: nil)
@@ -211,6 +221,9 @@ extension AddClothesViewController: WashingSymbolViewControllerDelegate {
         let imageName = value
         selectedImageView?.image = UIImage(named: imageName)
         selectedImageView?.reloadInputViews()
+        symbolList[symbolListNum] = imageName
+        print("symbollist")
+        print(symbolList)
         
     }
 }
