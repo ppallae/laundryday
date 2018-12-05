@@ -16,6 +16,20 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    
+    @IBOutlet weak var brandNameTextView: UITextView!
+    @IBOutlet weak var productTagNameTextView: UITextView!
+    @IBOutlet weak var purchasedDate: UITextView!
+    @IBOutlet weak var materialTextView: UITextView!
+    
+    @IBOutlet weak var drySymbol: UIImageView!
+    @IBOutlet weak var washableSymbol: UIImageView!
+    @IBOutlet weak var ironingSymbol: UIImageView!
+    @IBOutlet weak var dryCleaningSymbol: UIImageView!
+    @IBOutlet weak var bleachingSymbol: UIImageView!
+    
+    @IBOutlet weak var likeImageView: UIImageView!
+    
     var instantVC: UIViewController?
     var uid: String?
     var itemId: String?
@@ -43,6 +57,15 @@ class DetailViewController: UIViewController {
             let photoUrl = URL(string: photoUrlString)
             self.productImageView.sd_setImage(with: photoUrl)
         }
+        
+        Api.Clothes.isLiked(itemId: item!.id!, completed: {value in
+            if value {
+                self.configureUnLike()
+            } else {
+                self.configureLike()
+            }
+        })
+        
     }
 
     func loadItem(){
@@ -51,6 +74,35 @@ class DetailViewController: UIViewController {
             
         })
     }
+    
+    
+    func configureLike() {
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(self.likeAction))
+        likeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        likeImageView.isUserInteractionEnabled = true
+        likeImageView.image = UIImage(named: "like")
+    }
+    func configureUnLike() {
+        let tapGestureForUnLikeImageView = UITapGestureRecognizer(target: self, action: #selector(self.unLikeAction))
+        likeImageView.addGestureRecognizer(tapGestureForUnLikeImageView)
+        likeImageView.isUserInteractionEnabled = true
+        likeImageView.image = UIImage(named: "likeSelected")
+        
+    }
+    
+    @objc func likeAction() {
+        Api.Clothes.likeAction(withItem: item!.id!)
+        configureUnLike()
+    }
+    @objc func unLikeAction(){
+        Api.Clothes.unLikeAction(withItem: item!.id!)
+        configureLike()
+    }
+    
+    
+    
+    
+    
     func addTapGesture() {
         let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTapAction))
 //        singleTapRecognizer.isEnabled = true
@@ -84,8 +136,9 @@ class DetailViewController: UIViewController {
         view.addSubview((vc?.view)!)
         vc?.didMove(toParentViewController: self)
         vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 70 , width: self.view.frame.width, height: 100)
-        // iphone X 일 경우 y 이상하다
+        
     }
+    
     func displayChildViewController(vc: UIViewController) {
         addChildViewController(vc)
         self.view.addSubview(vc.view)

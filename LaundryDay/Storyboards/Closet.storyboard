@@ -753,10 +753,20 @@
                     <toolbarItems/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="bleachingSymbol" destination="FCj-rO-Slb" id="QZm-k0-FZx"/>
+                        <outlet property="brandNameTextView" destination="eyf-bh-Cc4" id="X3X-BD-8hQ"/>
                         <outlet property="detailView" destination="qnd-eK-Vws" id="qFZ-Rc-2uE"/>
+                        <outlet property="dryCleaningSymbol" destination="qkY-nb-8S7" id="ef3-z9-Geh"/>
+                        <outlet property="drySymbol" destination="825-cy-mLu" id="UBH-Fx-2ce"/>
+                        <outlet property="ironingSymbol" destination="eJW-gH-k6r" id="Brm-ab-7kl"/>
+                        <outlet property="likeImageView" destination="O5z-j2-g4y" id="8uI-4B-oTS"/>
+                        <outlet property="materialTextView" destination="4Vc-gN-PeE" id="lOr-Q6-AXS"/>
                         <outlet property="productImageView" destination="FkI-aP-yNl" id="CJF-uP-zNA"/>
                         <outlet property="productNameLabel" destination="aPe-uq-PDj" id="2X6-Fe-lV6"/>
+                        <outlet property="productTagNameTextView" destination="Ngh-m3-FP7" id="U20-de-Til"/>
+                        <outlet property="purchasedDate" destination="hGg-93-wqH" id="0a9-sD-eLv"/>
                         <outlet property="scrollView" destination="e5w-ED-z5K" id="xiL-6i-tHB"/>
+                        <outlet property="washableSymbol" destination="qve-4L-9xW" id="u66-RO-LLC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jq0-98-ZYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
