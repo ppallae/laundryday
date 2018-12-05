@@ -47,12 +47,21 @@ class DetailViewController: UIViewController {
         //var rightButton = UIBarButtonItem(image: UIImage(named: "more.png"), style: .plain, target: self, action: #selector(self.singleTapAction))
         //self.navigationItem.rightBarButtonItem = rightButton
 
+        productNameLabel.isUserInteractionEnabled = false
+        brandNameTextView.isUserInteractionEnabled = false
+        productTagNameTextView.isUserInteractionEnabled = false
+        purchasedDate.isUserInteractionEnabled = false
+        materialTextView.isUserInteractionEnabled = false
         
     }
     
     
     func updateView() {
         self.productNameLabel.text = item?.productName
+        self.brandNameTextView.text = item?.brandName
+        self.productTagNameTextView.text = item?.productTagName
+        self.purchasedDate.text = item?.purchasedDate
+        self.materialTextView.text = item?.material
         if let photoUrlString = item!.productImgUrl {
             let photoUrl = URL(string: photoUrlString)
             self.productImageView.sd_setImage(with: photoUrl)
