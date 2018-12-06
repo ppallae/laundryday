@@ -20,8 +20,6 @@
 		66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E520C1621E00314391 /* ClosetsApi.swift */; };
 		66C5E3E820C167F300314391 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E720C167F300314391 /* Closet.swift */; };
 		66C5E3EA20C1744500314391 /* MyClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E920C1744500314391 /* MyClosetsApi.swift */; };
-		CC233A18210AFE9400F6DCDC /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */; };
-		CC233A19210AFE9400F6DCDC /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC39F04021114AD500573235 /* LaundryShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F03F21114AD500573235 /* LaundryShop.swift */; };
 		CC728F4920908963003B3805 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC728F4820908962003B3805 /* Config.swift */; };
 		CC77448B20B58C090086464A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC77448A20B58C090086464A /* GoogleService-Info.plist */; };
@@ -60,13 +58,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CC233A1A210AFE9400F6DCDC /* Embed Frameworks */ = {
+		0E82EB6421B585540013797F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CC233A19210AFE9400F6DCDC /* ApiGatewayMac.framework in Embed Frameworks */,
+				0E82EB6321B585540013797F /* ApiGatewayMac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +73,11 @@
 
 /* Begin PBXFileReference section */
 		0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../maps.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
+		0E82EB6121B585530013797F /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiGatewayMac.framework; path = "../maps.ios-master/Frameworks/ApiGatewayMac.framework"; sourceTree = "<group>"; };
+		0E82EB6621B587250013797F /* boardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardData.swift; sourceTree = "<group>"; };
+		0E82EB6821B587D00013797F /* boardUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardUploadViewController.swift; sourceTree = "<group>"; };
+		0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewController.swift; sourceTree = "<group>"; };
+		0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewCell.swift; sourceTree = "<group>"; };
 		3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.debug.xcconfig"; sourceTree = "<group>"; };
 		46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashSymbolDescriptions.swift; sourceTree = "<group>"; };
 		46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +170,7 @@
 		CC825A702081E69400A4BDCC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */,
 				CC825A522081D43800A4BDCC /* Start.storyboard */,
 				CC825A662081E51000A4BDCC /* Main.storyboard */,
 				CC825A6E2081E66200A4BDCC /* Profile.storyboard */,
@@ -194,6 +198,8 @@
 				668900CE20C0842A00D673EC /* ClosetListViewController.swift */,
 				CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */,
 				CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */,
+				0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */,
+				0E82EB6821B587D00013797F /* boardUploadViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -225,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */,
+				0E82EB6121B585530013797F /* ApiGatewayMac.framework */,
 				CCC295E7207F93F80021BF8E /* LaundryDay */,
 				CCC295E6207F93F80021BF8E /* Products */,
 				437011E8A9648C9C3432886F /* Pods */,
@@ -249,9 +256,10 @@
 				CC825A712081E6B600A4BDCC /* ViewControllers */,
 				CCC295E8207F93F80021BF8E /* AppDelegate.swift */,
 				CCC295EF207F93F90021BF8E /* Assets.xcassets */,
-				CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */,
 				CCC295F4207F93F90021BF8E /* Info.plist */,
 				CC825A702081E69400A4BDCC /* Storyboards */,
+				0E82EB6621B587250013797F /* boardData.swift */,
+				0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */,
 				CC831C30208F1CAE002798A7 /* AuthService.swift */,
 				CCE51160210ED90100C726B7 /* NSearchApi.swift */,
 				CC728F4820908962003B3805 /* Config.swift */,
@@ -282,8 +290,8 @@
 				CCC295E2207F93F80021BF8E /* Frameworks */,
 				CCC295E3207F93F80021BF8E /* Resources */,
 				4E6E6716E6ABE0DF9B61C57A /* [CP] Embed Pods Frameworks */,
-				CC233A1A210AFE9400F6DCDC /* Embed Frameworks */,
-				CC233A1D210B00B200F6DCDC /* ShellScript */,
+				CC233A1D210B00B200F6DCDC /* Run Script */,
+				0E82EB6421B585540013797F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -393,13 +401,14 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC233A1D210B00B200F6DCDC /* ShellScript */ = {
+		CC233A1D210B00B200F6DCDC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E82EB6F21B5882C0013797F /* boardTimelineTableViewController.swift in Sources */,
 				46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */,
 				46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */,
 				CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */,
@@ -435,6 +445,8 @@
 				CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */,
 				CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */,
 				668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */,
+				0E82EB6921B587D00013797F /* boardUploadViewController.swift in Sources */,
+				0E82EB7121B588480013797F /* boardTimelineTableViewCell.swift in Sources */,
 				668900C020C04B9300D673EC /* DetailViewController.swift in Sources */,
 				CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */,
 				CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */,
@@ -451,6 +463,7 @@
 				66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */,
 				CC39F04021114AD500573235 /* LaundryShop.swift in Sources */,
 				CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */,
+				0E82EB6721B587250013797F /* boardData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
