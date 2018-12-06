@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E939AA921B99BC200C037F3 /* boardTimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */; };
+		0E939AAA21B99BCD00C037F3 /* boardUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6821B587D00013797F /* boardUploadViewController.swift */; };
+		0E939AAB21B99BD400C037F3 /* boardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6621B587250013797F /* boardData.swift */; };
+		0E939AAC21B99BD700C037F3 /* boardTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */; };
 		46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */; };
 		46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; };
 		46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -415,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n/Users/mjcho/Desktop/mj/maps.ios-master/Scripts/strip-frameworks.sh";
+			shellScript = "/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Scripts/strip-frameworks.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -432,6 +436,7 @@
 				46F5809121413B8A00B6BCA0 /* ShopTableViewCell.swift in Sources */,
 				46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */,
 				D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */,
+				0E939AA921B99BC200C037F3 /* boardTimelineTableViewController.swift in Sources */,
 				CCA8D65F20B331D000A33D90 /* HelperService.swift in Sources */,
 				CC7A2CFC210DD80000FFF235 /* MoreNMapViewController.swift in Sources */,
 				CC825A552081DE6800A4BDCC /* SignInViewController.swift in Sources */,
@@ -445,12 +450,14 @@
 				46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */,
 				CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */,
 				CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */,
+				0E939AAA21B99BCD00C037F3 /* boardUploadViewController.swift in Sources */,
 				668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */,
 				668900C020C04B9300D673EC /* DetailViewController.swift in Sources */,
 				CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */,
 				CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */,
 				CC825A632081E39A00A4BDCC /* ProfileViewController.swift in Sources */,
 				D30286C320F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift in Sources */,
+				0E939AAB21B99BD400C037F3 /* boardData.swift in Sources */,
 				CCC295E9207F93F80021BF8E /* AppDelegate.swift in Sources */,
 				CC825A612081E38900A4BDCC /* BoardViewController.swift in Sources */,
 				D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */,
@@ -459,6 +466,7 @@
 				CC831C31208F1CAE002798A7 /* AuthService.swift in Sources */,
 				D301470A20F74A4C000BB5CE /* SSCheckMark.swift in Sources */,
 				CCE51161210ED90100C726B7 /* NSearchApi.swift in Sources */,
+				0E939AAC21B99BD700C037F3 /* boardTimelineTableViewCell.swift in Sources */,
 				66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */,
 				CC39F04021114AD500573235 /* LaundryShop.swift in Sources */,
 				CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */,
@@ -664,7 +672,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/mjcho/Desktop/mj/laundryday/LaundryDay/naverMapForSwift.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -742,7 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/mjcho/Desktop/mj/laundryday/LaundryDay/naverMapForSwift.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

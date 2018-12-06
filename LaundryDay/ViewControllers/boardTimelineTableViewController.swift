@@ -40,10 +40,7 @@ class boardTimelineTableViewController: UITableViewController {
         ref = Database.database().reference()    //Firebase Database 루트를 가리키는 레퍼런스
         storageRef = Storage.storage().reference()    //Firebase Storage 루트를 가리키는 레퍼런스
         
-        
-        
-        
-        loadPosts()     //Firebase에서 포스트들을 불러들임
+        loadPosts()//Firebase에서 포스트들을 불러들임
         
         
         
