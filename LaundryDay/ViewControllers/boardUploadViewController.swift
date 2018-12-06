@@ -28,6 +28,8 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
     var ref: DatabaseReference? //우리가 사용할 Firebase Database
     var storageRef:StorageReference? //우리가 사용할 Firebase Storage 레퍼런스
     
+    var currentUserName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference() //Firebase Database 루트를 가리키는 레퍼런스
@@ -41,6 +43,10 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
         
         TitleView.text = titleBeginner
         TextView.text = placeHolder
+        
+        Api.User.observeCurrentUser(completion: {user in
+            self.currentUserName = user.userName
+        })
  
         
         //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:#selector(uploadPost))
@@ -108,9 +114,11 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
         if self.TextView.text != placeHolder{ //PlaceHolder 유무에 따른 글 업로드
             curRef?.child("text").setValue(self.TextView.text) //PlaceHolder와 같을 때 새로운 게시글의 text를 self.TextView.text로 지정
             curRef?.child("title").setValue(self.TitleView.text)
+            curRef?.child("userName").setValue(self.currentUserName)
         }else{
             curRef?.child("text").setValue("") //PlaceHolder와 같을 때 새로운 게시글의 text를 빈 텍스트로 지정.
             curRef?.child("title").setValue("")
+            curRef?.child("userName").setValue(self.currentUserName)
         }
         
         self.TextView.text = "" //한번 업로드 한 경우 다음 차례에 uploadViewController가 표시될 때 빈 텍스트만 보이도록 한다.

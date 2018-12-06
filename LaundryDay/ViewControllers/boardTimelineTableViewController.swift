@@ -17,7 +17,7 @@ class boardTimelineTableViewController: UITableViewController {
     let postingBoard = UIStoryboard(name: "Board", bundle: nil)
     
     
-    
+    var postId:Int = 0
     var ref:DatabaseReference?
     var storageRef:StorageReference?
     
@@ -75,6 +75,7 @@ class boardTimelineTableViewController: UITableViewController {
         cell.TextLabel.text = post.text
         //cell.ImageView.image = post.imageView.image
         cell.titleLabel.text = post.title
+        cell.userLabel.text = post.userName
         
         return cell
     }
@@ -94,8 +95,9 @@ class boardTimelineTableViewController: UITableViewController {
                 let dicDatum = snapshotDatum.value as! [String:String]
                 if let text = dicDatum["text"],
                     let title = dicDatum["title"],
+                    let userName = dicDatum["userName"],
                     let date = Int(dicDatum["date"]!){
-                    let post = Post(title,text,date)
+                    let post = Post(title,text,date,userName)
                     /*
                     //Get Image
                     let imageRef = self.storageRef?.child("\(snapshotDatum.key).jpg")
@@ -129,8 +131,9 @@ class boardTimelineTableViewController: UITableViewController {
                 let dicDatum = snapshotDatum.value as! [String:String]
                 if let text = dicDatum["text"],
                     let title = dicDatum["title"],
+                    let userName = dicDatum["userName"],
                     let date = Int(dicDatum["date"]!){
-                    let post = Post(title,text,date)
+                    let post = Post(title,text,date,userName)
                     /*
                     //Get Image from URL
                     let imageRef = self.storageRef?.child("\(snapshotDatum.key).jpg")

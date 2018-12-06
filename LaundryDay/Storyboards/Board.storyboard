@@ -10,6 +10,21 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="njZ-Qv-Ye5">
+            <objects>
+                <viewController id="WRe-9H-P1d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQ5-3e-h8B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KS6-gR-4pD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buS-la-WW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4620" y="1790"/>
+        </scene>
         <!--boardUploadViewController-->
         <scene sceneID="C9I-9j-R49">
             <objects>
@@ -52,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lX4-fQ-DM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4961" y="1790"/>
+            <point key="canvasLocation" x="5338" y="1790"/>
         </scene>
         <!--Board Timeline Table View Controller-->
         <scene sceneID="JWc-ai-Qkl">
@@ -82,6 +97,12 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qkv-6x-i1j">
+                                            <rect key="frame" x="325" y="25" width="34" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="cx0-Uf-WN9" firstAttribute="top" secondItem="08r-lm-ZZX" secondAttribute="topMargin" constant="14" id="FE6-uB-czO"/>
@@ -90,12 +111,15 @@
                                         <constraint firstItem="cx0-Uf-WN9" firstAttribute="trailing" secondItem="08r-lm-ZZX" secondAttribute="trailingMargin" id="LEC-ay-riW"/>
                                         <constraint firstItem="sGW-9r-o55" firstAttribute="leading" secondItem="08r-lm-ZZX" secondAttribute="leadingMargin" constant="8" id="OZY-bG-yrj"/>
                                         <constraint firstItem="sGW-9r-o55" firstAttribute="top" secondItem="cx0-Uf-WN9" secondAttribute="bottom" constant="30" id="cFm-UU-bWc"/>
+                                        <constraint firstItem="Qkv-6x-i1j" firstAttribute="trailing" secondItem="08r-lm-ZZX" secondAttribute="trailingMargin" id="dTM-VJ-Vvt"/>
+                                        <constraint firstItem="Qkv-6x-i1j" firstAttribute="top" secondItem="08r-lm-ZZX" secondAttribute="topMargin" constant="14" id="xJ7-e3-7vp"/>
                                         <constraint firstAttribute="bottom" secondItem="sGW-9r-o55" secondAttribute="bottom" constant="31" id="yGm-CD-02e"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="TextLabel" destination="sGW-9r-o55" id="Rml-P0-Viz"/>
                                     <outlet property="titleLabel" destination="cx0-Uf-WN9" id="uGt-PZ-T5t"/>
+                                    <outlet property="userLabel" destination="Qkv-6x-i1j" id="dBH-HA-UC2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -108,7 +132,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qj5-de-d1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4268" y="1789.6551724137933"/>
+            <point key="canvasLocation" x="3977" y="1790"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EeR-Mt-CTb">

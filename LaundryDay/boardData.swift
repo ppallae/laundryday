@@ -16,10 +16,12 @@ class Post {
     var text:String //게시글 내용
     var date:Int //게시 시간
     var imageView = UIImageView() //게시 이미지
+    var userName: String
     
-    init(_ title:String, _ text:String, _ date:Int) {
+    init(_ title:String, _ text:String, _ date:Int, _ userName: String) {
         self.title = title
         self.text = text
         self.date = date
+        self.userName = userName
     }
 }

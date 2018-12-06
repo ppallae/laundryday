@@ -1,1 +1,4 @@
 _site/
+*.xcuserdata
+UserInterface.xcuserstate
+*.xcuserdata
