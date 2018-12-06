@@ -58,21 +58,23 @@
                                     <segue destination="wZj-Q3-gFu" kind="presentation" id="jxT-N2-V9l"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Laundry Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-pY-7Wr">
-                                <rect key="frame" x="139" y="124" width="96.5" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laundry Day_colored" translatesAutoresizingMaskIntoConstraints="NO" id="jBr-5y-iny">
+                                <rect key="frame" x="103" y="102" width="170" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="P2j-n1-DH4"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zGb-6H-fBU" firstAttribute="centerX" secondItem="YDk-IU-eEc" secondAttribute="centerX" id="1f9-Yd-2f6"/>
                             <constraint firstItem="iJ7-oH-U7s" firstAttribute="top" secondItem="OV7-7s-u9Y" secondAttribute="bottom" constant="53.5" id="2gi-MU-ann"/>
                             <constraint firstItem="TPL-z3-1QI" firstAttribute="bottom" secondItem="zGb-6H-fBU" secondAttribute="bottom" constant="13" id="8oI-0P-FAs"/>
+                            <constraint firstItem="jBr-5y-iny" firstAttribute="top" secondItem="TPL-z3-1QI" secondAttribute="top" constant="82" id="Ew6-6W-zSR"/>
                             <constraint firstItem="OV7-7s-u9Y" firstAttribute="centerX" secondItem="YDk-IU-eEc" secondAttribute="centerX" id="K5N-o8-2gK"/>
                             <constraint firstItem="TPL-z3-1QI" firstAttribute="trailing" secondItem="OV7-7s-u9Y" secondAttribute="trailing" constant="13" id="YLt-4b-BhK"/>
                             <constraint firstItem="iJ7-oH-U7s" firstAttribute="centerX" secondItem="YDk-IU-eEc" secondAttribute="centerX" id="dym-Xm-4kN"/>
+                            <constraint firstItem="jBr-5y-iny" firstAttribute="centerX" secondItem="YDk-IU-eEc" secondAttribute="centerX" id="eOH-d6-NU5"/>
                             <constraint firstItem="OV7-7s-u9Y" firstAttribute="leading" secondItem="TPL-z3-1QI" secondAttribute="leading" constant="13" id="hIz-9M-1mW"/>
                             <constraint firstItem="iJ7-oH-U7s" firstAttribute="centerY" secondItem="YDk-IU-eEc" secondAttribute="centerY" id="la3-9R-GZN"/>
                         </constraints>
@@ -87,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UqS-2W-PMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-1"/>
+            <point key="canvasLocation" x="92" y="-1.3493253373313345"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="4dy-13-ro3">
@@ -154,8 +156,8 @@
                                     <action selector="logInButton:" destination="wZj-Q3-gFu" eventType="touchUpInside" id="cv3-1W-5f3"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="gbJ-zs-jn1">
-                                <rect key="frame" x="137.5" y="64" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_none" translatesAutoresizingMaskIntoConstraints="NO" id="gbJ-zs-jn1">
+                                <rect key="frame" x="137" y="64" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="NG9-fe-f9P"/>
                                     <constraint firstAttribute="width" constant="100" id="qvX-Eh-qsW"/>
@@ -177,14 +179,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="veB-dg-vUe">
-                                <rect key="frame" x="222.5" y="134" width="30" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileAdd" translatesAutoresizingMaskIntoConstraints="NO" id="veB-dg-vUe">
+                                <rect key="frame" x="222" y="134" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="9Ib-Ja-KD7"/>
                                     <constraint firstAttribute="height" constant="30" id="9lf-dk-Nz5"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vNL-lA-RBR" firstAttribute="centerX" secondItem="MWl-A4-YIU" secondAttribute="centerX" id="0DW-Mt-m2V"/>
                             <constraint firstItem="jV2-6B-tpY" firstAttribute="centerX" secondItem="MWl-A4-YIU" secondAttribute="centerX" id="4PD-eE-ZwY"/>
@@ -229,7 +232,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="default" width="1290" height="1290"/>
+        <image name="Laundry Day_colored" width="232" height="50"/>
+        <image name="profileAdd" width="35" height="35"/>
+        <image name="profile_none" width="500" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Vzv-m4-L3v"/>

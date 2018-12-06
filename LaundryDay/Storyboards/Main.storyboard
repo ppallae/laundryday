@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u5p-Dr-feJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u5p-Dr-feJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,10 +14,18 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u5p-Dr-feJ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6QZ-kn-i4O">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="6QZ-kn-i4O">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" name="systemGrayColor" catalog="System" colorSpace="catalog"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="t2Y-Ec-gpR" kind="relationship" relationship="viewControllers" id="VFS-uN-H4O"/>
@@ -33,7 +41,7 @@
         <scene sceneID="vnJ-xt-ihE">
             <objects>
                 <viewControllerPlaceholder storyboardName="Closet" id="t2Y-Ec-gpR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="나의옷장" id="rVo-9E-tgn"/>
+                    <tabBarItem key="tabBarItem" title="나의옷장" image="tab_closet_selected" id="rVo-9E-tgn"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvy-1o-oxK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,11 +61,15 @@
         <scene sceneID="Rh1-Ut-zhz">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="VOb-zt-Gbr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="프로필" id="af3-l3-81b"/>
+                    <tabBarItem key="tabBarItem" title="profile" image="tab_profile_selected" id="af3-l3-81b"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DeF-sj-juf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2502" y="598"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_closet_selected" width="26" height="17"/>
+        <image name="tab_profile_selected" width="25" height="25"/>
+    </resources>
 </document>

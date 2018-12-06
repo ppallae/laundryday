@@ -29,12 +29,25 @@ class ClosetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //네비게이션바 색조정
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isHidden = false
         
+        
+        //collectionview 옆으로 띄우기
+        collectionView.contentInset.right = 20
+        collectionView.contentInset.left = 20
+        collectionView.contentInset.top = 15
+        
+        //collectionview 데이터 연결
         collectionView.dataSource = self
         collectionView.delegate = self
         fetchUser()
         checkClosetId(closetID: closetId)
         
+        //옷 하나도 없을때 이미지뷰
         noItemView.isHidden = true
         
         
@@ -232,17 +245,20 @@ extension ClosetViewController: UICollectionViewDataSource {
     }
 }
 
+
 extension ClosetViewController: UICollectionViewDelegateFlowLayout {
+    //collectionView cell 양옆 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 1
     }
+    //collectionView cell 상하 간격
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 1
+        return 15
     }
     //사진 사이즈
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.size.width / 3 - 2, height: 150)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: collectionView.frame.size.width / 3 - 2, height: 150)
+//    }
     
 }
 
@@ -258,5 +274,19 @@ extension ClosetViewController: AddClothesViewControllerDelegate {
     func changeClosetIdToAll(id: String) {
         self.closetId = id
         checkClosetId(closetID: closetId)
+    }
+}
+extension UIColor {
+    
+    /// Converts this `UIColor` instance to a 1x1 `UIImage` instance and returns it.
+    ///
+    /// - Returns: `self` as a 1x1 `UIImage`.
+    func as1ptImage() -> UIImage {
+        UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
+        setFill()
+        UIGraphicsGetCurrentContext()?.fill(CGRect(x: 0, y: 0, width: 1, height: 1))
+        let image = UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
+        UIGraphicsEndImageContext()
+        return image
     }
 }

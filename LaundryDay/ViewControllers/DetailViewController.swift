@@ -16,7 +16,25 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
+    
+    @IBOutlet weak var brandNameTextView: UITextView!
+    @IBOutlet weak var productTagNameTextView: UITextView!
+    @IBOutlet weak var purchasedDate: UITextView!
+    @IBOutlet weak var materialTextView: UITextView!
+    
+    @IBOutlet weak var drySymbol: UIImageView!
+    @IBOutlet weak var washableSymbol: UIImageView!
+    @IBOutlet weak var ironingSymbol: UIImageView!
+    @IBOutlet weak var dryCleaningSymbol: UIImageView!
+    @IBOutlet weak var bleachingSymbol: UIImageView!
+    
+    @IBOutlet weak var likeImageView: UIImageView!
+    
     var instantVC: UIViewController?
+    
+    //for scrollView
+    var lastContentOffset: CGFloat = 0
+    
     var uid: String?
     var itemId: String?
     var item: Clothes? {
@@ -29,17 +47,48 @@ class DetailViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = true
         loadItem()
         addTapGesture()
+        
+        
+        //var rightButton = UIBarButtonItem(image: UIImage(named: "more.png"), style: .plain, target: self, action: #selector(self.singleTapAction))
+        //self.navigationItem.rightBarButtonItem = rightButton
 
+        productNameLabel.isUserInteractionEnabled = false
+        brandNameTextView.isUserInteractionEnabled = false
+        productTagNameTextView.isUserInteractionEnabled = false
+        purchasedDate.isUserInteractionEnabled = false
+        materialTextView.isUserInteractionEnabled = false
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         
     }
     
     
     func updateView() {
         self.productNameLabel.text = item?.productName
+        self.brandNameTextView.text = item?.brandName
+        self.productTagNameTextView.text = item?.productTagName
+        self.purchasedDate.text = item?.purchasedDate
+        self.materialTextView.text = item?.material
+        
+        self.drySymbol.image = UIImage(named: (item!.washSymbolList![0]))
+        self.washableSymbol.image = UIImage(named: item!.washSymbolList![1])
+        self.ironingSymbol.image = UIImage(named: item!.washSymbolList![2])
+        self.dryCleaningSymbol.image = UIImage(named: item!.washSymbolList![3])
+        self.bleachingSymbol.image = UIImage(named: item!.washSymbolList![4])
+        
         if let photoUrlString = item!.productImgUrl {
             let photoUrl = URL(string: photoUrlString)
             self.productImageView.sd_setImage(with: photoUrl)
         }
+        
+        Api.Clothes.isLiked(itemId: item!.id!, completed: {value in
+            if value {
+                self.configureUnLike()
+            } else {
+                self.configureLike()
+            }
+        })
+        
     }
 
     func loadItem(){
@@ -48,6 +97,35 @@ class DetailViewController: UIViewController {
             
         })
     }
+    
+    
+    func configureLike() {
+        let tapGestureForLikeImageView = UITapGestureRecognizer(target: self, action: #selector(self.likeAction))
+        likeImageView.addGestureRecognizer(tapGestureForLikeImageView)
+        likeImageView.isUserInteractionEnabled = true
+        likeImageView.image = UIImage(named: "like")
+    }
+    func configureUnLike() {
+        let tapGestureForUnLikeImageView = UITapGestureRecognizer(target: self, action: #selector(self.unLikeAction))
+        likeImageView.addGestureRecognizer(tapGestureForUnLikeImageView)
+        likeImageView.isUserInteractionEnabled = true
+        likeImageView.image = UIImage(named: "likeSelected")
+        
+    }
+    
+    @objc func likeAction() {
+        Api.Clothes.likeAction(withItem: item!.id!)
+        configureUnLike()
+    }
+    @objc func unLikeAction(){
+        Api.Clothes.unLikeAction(withItem: item!.id!)
+        configureLike()
+    }
+    
+    
+    
+    
+    
     func addTapGesture() {
         let singleTapRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.singleTapAction))
 //        singleTapRecognizer.isEnabled = true
@@ -80,9 +158,10 @@ class DetailViewController: UIViewController {
         displayChildViewController(vc: vc!)
         view.addSubview((vc?.view)!)
         vc?.didMove(toParentViewController: self)
-        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 100, width: self.view.frame.width, height: 100)
-        // iphone X 일 경우 y 이상하다
+        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 70 , width: self.view.frame.width, height: 70)
+        
     }
+    
     func displayChildViewController(vc: UIViewController) {
         addChildViewController(vc)
         self.view.addSubview(vc.view)
@@ -96,6 +175,6 @@ class DetailViewController: UIViewController {
         content.removeFromParentViewController()
     }
     
-
-
+    
 }
+

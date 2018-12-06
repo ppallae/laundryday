@@ -26,6 +26,7 @@ class ClosetListViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableHeaderView = headerView
+        headerView.dropShadow()
         
         fetchMyClosets()
         changeToAll()
