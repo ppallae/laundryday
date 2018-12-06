@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4600F30021B6B81900518340 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */; };
 		46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */; };
 		46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */; };
 		46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */; };
@@ -135,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E3C45EE215B6FA0001065AB /* NMapViewerSDK.framework in Frameworks */,
+				4600F30021B6B81900518340 /* NMapViewerSDK.framework in Frameworks */,
 				CC233A18210AFE9400F6DCDC /* ApiGatewayMac.framework in Frameworks */,
 				EB1C22131F99C043B11E17D1 /* Pods_LaundryDay.framework in Frameworks */,
 			);
@@ -403,7 +404,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Scripts/strip-frameworks.sh\n";
+			shellScript = "\n/Users/mjcho/Desktop/mj/maps.ios-master/Scripts/strip-frameworks.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -591,7 +592,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Frameworks",
+					"\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
 				);
 				INFOPLIST_FILE = LaundryDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -652,7 +653,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mjcho/Desktop/mj/laundryday/LaundryDay/naverMapForSwift.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -669,7 +670,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Frameworks",
+					"\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
 				);
 				INFOPLIST_FILE = LaundryDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -730,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mjcho/Desktop/mj/laundryday/LaundryDay/naverMapForSwift.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
