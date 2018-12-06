@@ -157,7 +157,7 @@ class DetailViewController: UIViewController {
         displayChildViewController(vc: vc!)
         view.addSubview((vc?.view)!)
         vc?.didMove(toParentViewController: self)
-        vc?.view.frame = CGRect(x: self.view.frame.width - 50, y: 0 , width: 50, height: 50)
+        vc?.view.frame = CGRect(x: 0, y: self.view.frame.height - 70 , width: self.view.frame.width, height: 70)
         
     }
     
