@@ -494,8 +494,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="art_1524014029" width="550" height="242"/>
-        <image name="like" width="47" height="47"/>
-        <image name="tab_profile_selected" width="25" height="25"/>
+        <image name="art_1524014029" width="330" height="145.19999694824219"/>
+        <image name="like" width="46" height="41"/>
     </resources>
 </document>

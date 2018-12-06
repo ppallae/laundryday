@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4600F30021B6B81900518340 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */; };
 		46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */; };
+		46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; };
+		46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */; };
 		46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */; };
 		46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */; };
 		46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */; };
@@ -54,7 +56,6 @@
 		D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30289F22111BB9700D725EB /* EditClothesViewController.swift */; };
 		D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B77012108752000C74FCB /* DetailEditingViewController.swift */; };
 		D3B9AAF0210086200004B4D9 /* TimeDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9AAEF210086200004B4D9 /* TimeDelay.swift */; };
-		EB1C22131F99C043B11E17D1 /* Pods_LaundryDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55F18E44790B284EB4FA295 /* Pods_LaundryDay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0E82EB6321B585540013797F /* ApiGatewayMac.framework in Embed Frameworks */,
+				46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +81,7 @@
 		0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewCell.swift; sourceTree = "<group>"; };
 		3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.debug.xcconfig"; sourceTree = "<group>"; };
 		46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashSymbolDescriptions.swift; sourceTree = "<group>"; };
+		46E865A521B94F630004D819 /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
 		46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolViewController.swift; sourceTree = "<group>"; };
 		46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolTableViewCell.swift; sourceTree = "<group>"; };
 		46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesViewController.swift; sourceTree = "<group>"; };
@@ -139,9 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4600F30021B6B81900518340 /* NMapViewerSDK.framework in Frameworks */,
-				CC233A18210AFE9400F6DCDC /* ApiGatewayMac.framework in Frameworks */,
-				EB1C22131F99C043B11E17D1 /* Pods_LaundryDay.framework in Frameworks */,
+				46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */,
+				46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +233,7 @@
 			children = (
 				CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */,
 				0E82EB6121B585530013797F /* ApiGatewayMac.framework */,
+				46E865A521B94F630004D819 /* ApiGatewayMac.framework */,
 				CCC295E7207F93F80021BF8E /* LaundryDay */,
 				CCC295E6207F93F80021BF8E /* Products */,
 				437011E8A9648C9C3432886F /* Pods */,
@@ -422,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E82EB6F21B5882C0013797F /* boardTimelineTableViewController.swift in Sources */,
 				46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */,
 				46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */,
 				CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */,
@@ -445,8 +446,6 @@
 				CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */,
 				CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */,
 				668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */,
-				0E82EB6921B587D00013797F /* boardUploadViewController.swift in Sources */,
-				0E82EB7121B588480013797F /* boardTimelineTableViewCell.swift in Sources */,
 				668900C020C04B9300D673EC /* DetailViewController.swift in Sources */,
 				CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */,
 				CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */,
@@ -463,7 +462,6 @@
 				66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */,
 				CC39F04021114AD500573235 /* LaundryShop.swift in Sources */,
 				CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */,
-				0E82EB6721B587250013797F /* boardData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
