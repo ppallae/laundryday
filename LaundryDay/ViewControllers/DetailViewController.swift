@@ -58,6 +58,7 @@ class DetailViewController: UIViewController {
         purchasedDate.isUserInteractionEnabled = false
         materialTextView.isUserInteractionEnabled = false
         
+        self.navigationController?.navigationBar.tintColor = UIColor.black
         
     }
     

@@ -740,6 +740,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="vhh-i9-eFk" firstAttribute="trailing" secondItem="e5w-ED-z5K" secondAttribute="trailing" id="E2n-QJ-DEa"/>
@@ -751,6 +752,7 @@
                         <viewLayoutGuide key="safeArea" id="vhh-i9-eFk"/>
                     </view>
                     <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="bleachingSymbol" destination="FCj-rO-Slb" id="QZm-k0-FZx"/>
