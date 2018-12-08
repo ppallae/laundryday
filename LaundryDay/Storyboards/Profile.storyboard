@@ -441,13 +441,11 @@
             </objects>
             <point key="canvasLocation" x="4404" y="2637"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--프로필-->
         <scene sceneID="Rvp-87-ZYt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ui-SC-d2S" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="tab_profile_selected" id="QnN-iY-SD0">
-                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="프로필" image="tab_profile_selected" id="QnN-iY-SD0"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ugb-24-8AT">
