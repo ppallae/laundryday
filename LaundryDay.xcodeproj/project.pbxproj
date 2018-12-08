@@ -1,783 +1,787 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+    archiveVersion = 1;
+    classes = {
+    };
+    objectVersion = 50;
+    objects = {
 
 /* Begin PBXBuildFile section */
-		0E939AA921B99BC200C037F3 /* boardTimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */; };
-		0E939AAA21B99BCD00C037F3 /* boardUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6821B587D00013797F /* boardUploadViewController.swift */; };
-		0E939AAB21B99BD400C037F3 /* boardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6621B587250013797F /* boardData.swift */; };
-		0E939AAC21B99BD700C037F3 /* boardTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */; };
-		46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */; };
-		46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; };
-		46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */; };
-		46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */; };
-		46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */; };
-		46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */; };
-		46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */; };
-		46F5809121413B8A00B6BCA0 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */; };
-		668900C020C04B9300D673EC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900BF20C04B9300D673EC /* DetailViewController.swift */; };
-		668900CD20C0815800D673EC /* ClosetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */; };
-		668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900CE20C0842A00D673EC /* ClosetListViewController.swift */; };
-		66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E520C1621E00314391 /* ClosetsApi.swift */; };
-		66C5E3E820C167F300314391 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E720C167F300314391 /* Closet.swift */; };
-		66C5E3EA20C1744500314391 /* MyClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E920C1744500314391 /* MyClosetsApi.swift */; };
-		CC39F04021114AD500573235 /* LaundryShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F03F21114AD500573235 /* LaundryShop.swift */; };
-		CC728F4920908963003B3805 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC728F4820908962003B3805 /* Config.swift */; };
-		CC77448B20B58C090086464A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC77448A20B58C090086464A /* GoogleService-Info.plist */; };
-		CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */; };
-		CC7A2CFC210DD80000FFF235 /* MoreNMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */; };
-		CC825A532081D43800A4BDCC /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A522081D43800A4BDCC /* Start.storyboard */; };
-		CC825A552081DE6800A4BDCC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A542081DE6800A4BDCC /* SignInViewController.swift */; };
-		CC825A572081DE8800A4BDCC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A562081DE8800A4BDCC /* SignUpViewController.swift */; };
-		CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */; };
-		CC825A612081E38900A4BDCC /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A602081E38900A4BDCC /* BoardViewController.swift */; };
-		CC825A632081E39A00A4BDCC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A622081E39A00A4BDCC /* ProfileViewController.swift */; };
-		CC825A672081E51000A4BDCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A662081E51000A4BDCC /* Main.storyboard */; };
-		CC825A692081E62300A4BDCC /* Closet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A682081E62300A4BDCC /* Closet.storyboard */; };
-		CC825A6D2081E65500A4BDCC /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A6C2081E65500A4BDCC /* Board.storyboard */; };
-		CC825A6F2081E66200A4BDCC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A6E2081E66200A4BDCC /* Profile.storyboard */; };
-		CC831C31208F1CAE002798A7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC831C30208F1CAE002798A7 /* AuthService.swift */; };
-		CC92F2EB20AC8649006C04AB /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F2EA20AC8649006C04AB /* Clothes.swift */; };
-		CC92F2EE20AC9E2D006C04AB /* ClosetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */; };
-		CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8D65A20B3225400A33D90 /* ClothesApi.swift */; };
-		CCA8D65F20B331D000A33D90 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8D65E20B331D000A33D90 /* HelperService.swift */; };
-		CCC295E9207F93F80021BF8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC295E8207F93F80021BF8E /* AppDelegate.swift */; };
-		CCC295F0207F93F90021BF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC295EF207F93F90021BF8E /* Assets.xcassets */; };
-		CCC295F3207F93F90021BF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */; };
-		CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6A20B2FEA30031A766 /* Api.swift */; };
-		CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */; };
-		CCC83D6F20B304640031A766 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6E20B304640031A766 /* UserApi.swift */; };
-		CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D7020B305EA0031A766 /* UserInfo.swift */; };
-		CCE51161210ED90100C726B7 /* NSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE51160210ED90100C726B7 /* NSearchApi.swift */; };
-		D301470A20F74A4C000BB5CE /* SSCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301470920F74A4C000BB5CE /* SSCheckMark.swift */; };
-		D30286C120F60CCF0054D6B2 /* AddClothesToClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */; };
-		D30286C320F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */; };
-		D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30289F22111BB9700D725EB /* EditClothesViewController.swift */; };
-		D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B77012108752000C74FCB /* DetailEditingViewController.swift */; };
-		D3B9AAF0210086200004B4D9 /* TimeDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9AAEF210086200004B4D9 /* TimeDelay.swift */; };
+        0E939AA921B99BC200C037F3 /* boardTimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */; };
+        0E939AAA21B99BCD00C037F3 /* boardUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6821B587D00013797F /* boardUploadViewController.swift */; };
+        0E939AAB21B99BD400C037F3 /* boardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6621B587250013797F /* boardData.swift */; };
+        0E939AAC21B99BD700C037F3 /* boardTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */; };
+        46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */; };
+        46CA3C4621B99D670038105C /* boardTimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */; };
+        46CA3C4721B99D6A0038105C /* boardUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6821B587D00013797F /* boardUploadViewController.swift */; };
+        46CA3C4821B99D700038105C /* boardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB6621B587250013797F /* boardData.swift */; };
+        46CA3C4921B99D750038105C /* boardTimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */; };
+        46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; };
+        46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46E865A521B94F630004D819 /* ApiGatewayMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+        46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */; };
+        46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */; };
+        46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */; };
+        46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */; };
+        46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */; };
+        46F5809121413B8A00B6BCA0 /* ShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */; };
+        668900C020C04B9300D673EC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900BF20C04B9300D673EC /* DetailViewController.swift */; };
+        668900CD20C0815800D673EC /* ClosetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */; };
+        668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668900CE20C0842A00D673EC /* ClosetListViewController.swift */; };
+        66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E520C1621E00314391 /* ClosetsApi.swift */; };
+        66C5E3E820C167F300314391 /* Closet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E720C167F300314391 /* Closet.swift */; };
+        66C5E3EA20C1744500314391 /* MyClosetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5E3E920C1744500314391 /* MyClosetsApi.swift */; };
+        CC39F04021114AD500573235 /* LaundryShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39F03F21114AD500573235 /* LaundryShop.swift */; };
+        CC728F4920908963003B3805 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC728F4820908962003B3805 /* Config.swift */; };
+        CC77448B20B58C090086464A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC77448A20B58C090086464A /* GoogleService-Info.plist */; };
+        CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */; };
+        CC7A2CFC210DD80000FFF235 /* MoreNMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */; };
+        CC825A532081D43800A4BDCC /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A522081D43800A4BDCC /* Start.storyboard */; };
+        CC825A552081DE6800A4BDCC /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A542081DE6800A4BDCC /* SignInViewController.swift */; };
+        CC825A572081DE8800A4BDCC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A562081DE8800A4BDCC /* SignUpViewController.swift */; };
+        CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */; };
+        CC825A612081E38900A4BDCC /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A602081E38900A4BDCC /* BoardViewController.swift */; };
+        CC825A632081E39A00A4BDCC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC825A622081E39A00A4BDCC /* ProfileViewController.swift */; };
+        CC825A672081E51000A4BDCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A662081E51000A4BDCC /* Main.storyboard */; };
+        CC825A692081E62300A4BDCC /* Closet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A682081E62300A4BDCC /* Closet.storyboard */; };
+        CC825A6D2081E65500A4BDCC /* Board.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A6C2081E65500A4BDCC /* Board.storyboard */; };
+        CC825A6F2081E66200A4BDCC /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC825A6E2081E66200A4BDCC /* Profile.storyboard */; };
+        CC831C31208F1CAE002798A7 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC831C30208F1CAE002798A7 /* AuthService.swift */; };
+        CC92F2EB20AC8649006C04AB /* Clothes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F2EA20AC8649006C04AB /* Clothes.swift */; };
+        CC92F2EE20AC9E2D006C04AB /* ClosetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */; };
+        CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8D65A20B3225400A33D90 /* ClothesApi.swift */; };
+        CCA8D65F20B331D000A33D90 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8D65E20B331D000A33D90 /* HelperService.swift */; };
+        CCC295E9207F93F80021BF8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC295E8207F93F80021BF8E /* AppDelegate.swift */; };
+        CCC295F0207F93F90021BF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC295EF207F93F90021BF8E /* Assets.xcassets */; };
+        CCC295F3207F93F90021BF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */; };
+        CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6A20B2FEA30031A766 /* Api.swift */; };
+        CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */; };
+        CCC83D6F20B304640031A766 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D6E20B304640031A766 /* UserApi.swift */; };
+        CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC83D7020B305EA0031A766 /* UserInfo.swift */; };
+        CCE51161210ED90100C726B7 /* NSearchApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE51160210ED90100C726B7 /* NSearchApi.swift */; };
+        D301470A20F74A4C000BB5CE /* SSCheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = D301470920F74A4C000BB5CE /* SSCheckMark.swift */; };
+        D30286C120F60CCF0054D6B2 /* AddClothesToClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */; };
+        D30286C320F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */; };
+        D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30289F22111BB9700D725EB /* EditClothesViewController.swift */; };
+        D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B77012108752000C74FCB /* DetailEditingViewController.swift */; };
+        D3B9AAF0210086200004B4D9 /* TimeDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B9AAEF210086200004B4D9 /* TimeDelay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0E82EB6421B585540013797F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        0E82EB6421B585540013797F /* Embed Frameworks */ = {
+            isa = PBXCopyFilesBuildPhase;
+            buildActionMask = 2147483647;
+            dstPath = "";
+            dstSubfolderSpec = 10;
+            files = (
+                46E865A721B94F630004D819 /* ApiGatewayMac.framework in Embed Frameworks */,
+            );
+            name = "Embed Frameworks";
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../maps.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
-		0E82EB6121B585530013797F /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiGatewayMac.framework; path = "../maps.ios-master/Frameworks/ApiGatewayMac.framework"; sourceTree = "<group>"; };
-		0E82EB6621B587250013797F /* boardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardData.swift; sourceTree = "<group>"; };
-		0E82EB6821B587D00013797F /* boardUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardUploadViewController.swift; sourceTree = "<group>"; };
-		0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewController.swift; sourceTree = "<group>"; };
-		0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewCell.swift; sourceTree = "<group>"; };
-		3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.debug.xcconfig"; sourceTree = "<group>"; };
-		46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashSymbolDescriptions.swift; sourceTree = "<group>"; };
-		46E865A521B94F630004D819 /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
-		46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolViewController.swift; sourceTree = "<group>"; };
-		46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolTableViewCell.swift; sourceTree = "<group>"; };
-		46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesViewController.swift; sourceTree = "<group>"; };
-		46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTheShopViewController.swift; sourceTree = "<group>"; };
-		46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
-		668900BF20C04B9300D673EC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetListTableViewCell.swift; sourceTree = "<group>"; };
-		668900CE20C0842A00D673EC /* ClosetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetListViewController.swift; sourceTree = "<group>"; };
-		66C5E3E520C1621E00314391 /* ClosetsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetsApi.swift; sourceTree = "<group>"; };
-		66C5E3E720C167F300314391 /* Closet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closet.swift; sourceTree = "<group>"; };
-		66C5E3E920C1744500314391 /* MyClosetsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosetsApi.swift; sourceTree = "<group>"; };
-		C55F18E44790B284EB4FA295 /* Pods_LaundryDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundryDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
-		CC233A1B210AFEBF00F6DCDC /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../../maps.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
-		CC233A21210B078300F6DCDC /* naverMapForSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = naverMapForSwift.h; sourceTree = "<group>"; };
-		CC39F03F21114AD500573235 /* LaundryShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaundryShop.swift; path = Laundryday/LaundryShop.swift; sourceTree = SOURCE_ROOT; };
-		CC728F4820908962003B3805 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		CC77448A20B58C090086464A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NaverMapViewController.swift; path = Laundryday/ViewControllers/NaverMapViewController.swift; sourceTree = SOURCE_ROOT; };
-		CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreNMapViewController.swift; sourceTree = "<group>"; };
-		CC825A522081D43800A4BDCC /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
-		CC825A542081DE6800A4BDCC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		CC825A562081DE8800A4BDCC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
-		CC825A602081E38900A4BDCC /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
-		CC825A622081E39A00A4BDCC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		CC825A662081E51000A4BDCC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CC825A682081E62300A4BDCC /* Closet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Closet.storyboard; sourceTree = "<group>"; };
-		CC825A6C2081E65500A4BDCC /* Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
-		CC825A6E2081E66200A4BDCC /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		CC831C30208F1CAE002798A7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		CC92F2EA20AC8649006C04AB /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
-		CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetCollectionViewCell.swift; sourceTree = "<group>"; };
-		CCA8D65A20B3225400A33D90 /* ClothesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesApi.swift; sourceTree = "<group>"; };
-		CCA8D65E20B331D000A33D90 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
-		CCC295E5207F93F80021BF8E /* LaundryDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCC295E8207F93F80021BF8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCC295EF207F93F90021BF8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CCC295F2207F93F90021BF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CCC295F4207F93F90021BF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCC83D6A20B2FEA30031A766 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
-		CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsApi.swift; sourceTree = "<group>"; };
-		CCC83D6E20B304640031A766 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
-		CCC83D7020B305EA0031A766 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		CCE51160210ED90100C726B7 /* NSearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSearchApi.swift; path = LaundryDay/NSearchApi.swift; sourceTree = SOURCE_ROOT; };
-		D301470920F74A4C000BB5CE /* SSCheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCheckMark.swift; sourceTree = "<group>"; };
-		D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesToClosetViewController.swift; sourceTree = "<group>"; };
-		D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesToClosetCollectionViewCell.swift; sourceTree = "<group>"; };
-		D30289F22111BB9700D725EB /* EditClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClothesViewController.swift; sourceTree = "<group>"; };
-		D39B77012108752000C74FCB /* DetailEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditingViewController.swift; sourceTree = "<group>"; };
-		D3B9AAEF210086200004B4D9 /* TimeDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelay.swift; sourceTree = "<group>"; };
-		E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.release.xcconfig"; sourceTree = "<group>"; };
+        0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../maps.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
+        0E82EB6121B585530013797F /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApiGatewayMac.framework; path = "../maps.ios-master/Frameworks/ApiGatewayMac.framework"; sourceTree = "<group>"; };
+        0E82EB6621B587250013797F /* boardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardData.swift; sourceTree = "<group>"; };
+        0E82EB6821B587D00013797F /* boardUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardUploadViewController.swift; sourceTree = "<group>"; };
+        0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewController.swift; sourceTree = "<group>"; };
+        0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardTimelineTableViewCell.swift; sourceTree = "<group>"; };
+        3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.debug.xcconfig"; sourceTree = "<group>"; };
+        46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashSymbolDescriptions.swift; sourceTree = "<group>"; };
+        46E865A521B94F630004D819 /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
+        46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolViewController.swift; sourceTree = "<group>"; };
+        46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingSymbolTableViewCell.swift; sourceTree = "<group>"; };
+        46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesViewController.swift; sourceTree = "<group>"; };
+        46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTheShopViewController.swift; sourceTree = "<group>"; };
+        46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewCell.swift; sourceTree = "<group>"; };
+        668900BF20C04B9300D673EC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+        668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetListTableViewCell.swift; sourceTree = "<group>"; };
+        668900CE20C0842A00D673EC /* ClosetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetListViewController.swift; sourceTree = "<group>"; };
+        66C5E3E520C1621E00314391 /* ClosetsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetsApi.swift; sourceTree = "<group>"; };
+        66C5E3E720C167F300314391 /* Closet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closet.swift; sourceTree = "<group>"; };
+        66C5E3E920C1744500314391 /* MyClosetsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClosetsApi.swift; sourceTree = "<group>"; };
+        C55F18E44790B284EB4FA295 /* Pods_LaundryDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundryDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+        CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ApiGatewayMac.framework; sourceTree = "<group>"; };
+        CC233A1B210AFEBF00F6DCDC /* NMapViewerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NMapViewerSDK.framework; path = "../../maps.ios-master/Frameworks/NMapViewerSDK.framework"; sourceTree = "<group>"; };
+        CC233A21210B078300F6DCDC /* naverMapForSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = naverMapForSwift.h; sourceTree = "<group>"; };
+        CC39F03F21114AD500573235 /* LaundryShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaundryShop.swift; path = Laundryday/LaundryShop.swift; sourceTree = SOURCE_ROOT; };
+        CC728F4820908962003B3805 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+        CC77448A20B58C090086464A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+        CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NaverMapViewController.swift; path = Laundryday/ViewControllers/NaverMapViewController.swift; sourceTree = SOURCE_ROOT; };
+        CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreNMapViewController.swift; sourceTree = "<group>"; };
+        CC825A522081D43800A4BDCC /* Start.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Start.storyboard; sourceTree = "<group>"; };
+        CC825A542081DE6800A4BDCC /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+        CC825A562081DE8800A4BDCC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+        CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+        CC825A602081E38900A4BDCC /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+        CC825A622081E39A00A4BDCC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+        CC825A662081E51000A4BDCC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+        CC825A682081E62300A4BDCC /* Closet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Closet.storyboard; sourceTree = "<group>"; };
+        CC825A6C2081E65500A4BDCC /* Board.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Board.storyboard; sourceTree = "<group>"; };
+        CC825A6E2081E66200A4BDCC /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+        CC831C30208F1CAE002798A7 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+        CC92F2EA20AC8649006C04AB /* Clothes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothes.swift; sourceTree = "<group>"; };
+        CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetCollectionViewCell.swift; sourceTree = "<group>"; };
+        CCA8D65A20B3225400A33D90 /* ClothesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesApi.swift; sourceTree = "<group>"; };
+        CCA8D65E20B331D000A33D90 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+        CCC295E5207F93F80021BF8E /* LaundryDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaundryDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        CCC295E8207F93F80021BF8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+        CCC295EF207F93F90021BF8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+        CCC295F2207F93F90021BF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+        CCC295F4207F93F90021BF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+        CCC83D6A20B2FEA30031A766 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+        CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyItemsApi.swift; sourceTree = "<group>"; };
+        CCC83D6E20B304640031A766 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+        CCC83D7020B305EA0031A766 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+        CCE51160210ED90100C726B7 /* NSearchApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NSearchApi.swift; path = LaundryDay/NSearchApi.swift; sourceTree = SOURCE_ROOT; };
+        D301470920F74A4C000BB5CE /* SSCheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCheckMark.swift; sourceTree = "<group>"; };
+        D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesToClosetViewController.swift; sourceTree = "<group>"; };
+        D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClothesToClosetCollectionViewCell.swift; sourceTree = "<group>"; };
+        D30289F22111BB9700D725EB /* EditClothesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClothesViewController.swift; sourceTree = "<group>"; };
+        D39B77012108752000C74FCB /* DetailEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditingViewController.swift; sourceTree = "<group>"; };
+        D3B9AAEF210086200004B4D9 /* TimeDelay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelay.swift; sourceTree = "<group>"; };
+        E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundryDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		CCC295E2207F93F80021BF8E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */,
-				46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CCC295E2207F93F80021BF8E /* Frameworks */ = {
+            isa = PBXFrameworksBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                46E865A821B94FD70004D819 /* NMapViewerSDK.framework in Frameworks */,
+                46E865A621B94F630004D819 /* ApiGatewayMac.framework in Frameworks */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3CED4B3B08C7710FE675B92C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CC233A1B210AFEBF00F6DCDC /* NMapViewerSDK.framework */,
-				0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */,
-				C55F18E44790B284EB4FA295 /* Pods_LaundryDay.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		437011E8A9648C9C3432886F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */,
-				E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CC825A702081E69400A4BDCC /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */,
-				CC825A522081D43800A4BDCC /* Start.storyboard */,
-				CC825A662081E51000A4BDCC /* Main.storyboard */,
-				CC825A6E2081E66200A4BDCC /* Profile.storyboard */,
-				CC825A6C2081E65500A4BDCC /* Board.storyboard */,
-				CC825A682081E62300A4BDCC /* Closet.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		CC825A712081E6B600A4BDCC /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CC825A542081DE6800A4BDCC /* SignInViewController.swift */,
-				CC825A562081DE8800A4BDCC /* SignUpViewController.swift */,
-				D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */,
-				46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */,
-				46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */,
-				CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */,
-				CC825A602081E38900A4BDCC /* BoardViewController.swift */,
-				46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */,
-				CC825A622081E39A00A4BDCC /* ProfileViewController.swift */,
-				668900BF20C04B9300D673EC /* DetailViewController.swift */,
-				D30289F22111BB9700D725EB /* EditClothesViewController.swift */,
-				D39B77012108752000C74FCB /* DetailEditingViewController.swift */,
-				668900CE20C0842A00D673EC /* ClosetListViewController.swift */,
-				CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */,
-				CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */,
-				0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */,
-				0E82EB6821B587D00013797F /* boardUploadViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		CC92F2E920AC8633006C04AB /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				66C5E3E720C167F300314391 /* Closet.swift */,
-				CC92F2EA20AC8649006C04AB /* Clothes.swift */,
-				CCC83D7020B305EA0031A766 /* UserInfo.swift */,
-				46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CC92F2EC20AC9E04006C04AB /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */,
-				D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */,
-				46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */,
-				46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */,
-				668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		CCC295DC207F93F80021BF8E = {
-			isa = PBXGroup;
-			children = (
-				CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */,
-				0E82EB6121B585530013797F /* ApiGatewayMac.framework */,
-				46E865A521B94F630004D819 /* ApiGatewayMac.framework */,
-				CCC295E7207F93F80021BF8E /* LaundryDay */,
-				CCC295E6207F93F80021BF8E /* Products */,
-				437011E8A9648C9C3432886F /* Pods */,
-				3CED4B3B08C7710FE675B92C /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		CCC295E6207F93F80021BF8E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CCC295E5207F93F80021BF8E /* LaundryDay.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CCC295E7207F93F80021BF8E /* LaundryDay */ = {
-			isa = PBXGroup;
-			children = (
-				CC77448A20B58C090086464A /* GoogleService-Info.plist */,
-				CC92F2EC20AC9E04006C04AB /* Views */,
-				CC92F2E920AC8633006C04AB /* Model */,
-				CC825A712081E6B600A4BDCC /* ViewControllers */,
-				CCC295E8207F93F80021BF8E /* AppDelegate.swift */,
-				CCC295EF207F93F90021BF8E /* Assets.xcassets */,
-				CCC295F4207F93F90021BF8E /* Info.plist */,
-				CC825A702081E69400A4BDCC /* Storyboards */,
-				0E82EB6621B587250013797F /* boardData.swift */,
-				0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */,
-				CC831C30208F1CAE002798A7 /* AuthService.swift */,
-				CCE51160210ED90100C726B7 /* NSearchApi.swift */,
-				CC728F4820908962003B3805 /* Config.swift */,
-				CCC83D6A20B2FEA30031A766 /* Api.swift */,
-				CCA8D65E20B331D000A33D90 /* HelperService.swift */,
-				D3B9AAEF210086200004B4D9 /* TimeDelay.swift */,
-				CCC83D6E20B304640031A766 /* UserApi.swift */,
-				CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */,
-				66C5E3E920C1744500314391 /* MyClosetsApi.swift */,
-				CCA8D65A20B3225400A33D90 /* ClothesApi.swift */,
-				D301470920F74A4C000BB5CE /* SSCheckMark.swift */,
-				66C5E3E520C1621E00314391 /* ClosetsApi.swift */,
-				CC233A21210B078300F6DCDC /* naverMapForSwift.h */,
-				CC39F03F21114AD500573235 /* LaundryShop.swift */,
-			);
-			path = LaundryDay;
-			sourceTree = "<group>";
-		};
+        3CED4B3B08C7710FE675B92C /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+                CC233A1B210AFEBF00F6DCDC /* NMapViewerSDK.framework */,
+                0E3C45ED215B6FA0001065AB /* NMapViewerSDK.framework */,
+                C55F18E44790B284EB4FA295 /* Pods_LaundryDay.framework */,
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
+        437011E8A9648C9C3432886F /* Pods */ = {
+            isa = PBXGroup;
+            children = (
+                3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */,
+                E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */,
+            );
+            name = Pods;
+            sourceTree = "<group>";
+        };
+        CC825A702081E69400A4BDCC /* Storyboards */ = {
+            isa = PBXGroup;
+            children = (
+                CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */,
+                CC825A522081D43800A4BDCC /* Start.storyboard */,
+                CC825A662081E51000A4BDCC /* Main.storyboard */,
+                CC825A6E2081E66200A4BDCC /* Profile.storyboard */,
+                CC825A6C2081E65500A4BDCC /* Board.storyboard */,
+                CC825A682081E62300A4BDCC /* Closet.storyboard */,
+            );
+            path = Storyboards;
+            sourceTree = "<group>";
+        };
+        CC825A712081E6B600A4BDCC /* ViewControllers */ = {
+            isa = PBXGroup;
+            children = (
+                CC825A542081DE6800A4BDCC /* SignInViewController.swift */,
+                CC825A562081DE8800A4BDCC /* SignUpViewController.swift */,
+                D30286C020F60CCF0054D6B2 /* AddClothesToClosetViewController.swift */,
+                46F58088214123DD00B6BCA0 /* AddClothesViewController.swift */,
+                46F5808A214123EF00B6BCA0 /* SearchTheShopViewController.swift */,
+                CC825A5C2081E30B00A4BDCC /* ClosetViewController.swift */,
+                CC825A602081E38900A4BDCC /* BoardViewController.swift */,
+                46EA794D2162281F003FEEFB /* WashingSymbolViewController.swift */,
+                CC825A622081E39A00A4BDCC /* ProfileViewController.swift */,
+                668900BF20C04B9300D673EC /* DetailViewController.swift */,
+                D30289F22111BB9700D725EB /* EditClothesViewController.swift */,
+                D39B77012108752000C74FCB /* DetailEditingViewController.swift */,
+                668900CE20C0842A00D673EC /* ClosetListViewController.swift */,
+                CC7A2CF9210DCE6500FFF235 /* NaverMapViewController.swift */,
+                CC7A2CFB210DD80000FFF235 /* MoreNMapViewController.swift */,
+                0E82EB6E21B5882C0013797F /* boardTimelineTableViewController.swift */,
+                0E82EB6821B587D00013797F /* boardUploadViewController.swift */,
+            );
+            path = ViewControllers;
+            sourceTree = "<group>";
+        };
+        CC92F2E920AC8633006C04AB /* Model */ = {
+            isa = PBXGroup;
+            children = (
+                66C5E3E720C167F300314391 /* Closet.swift */,
+                CC92F2EA20AC8649006C04AB /* Clothes.swift */,
+                CCC83D7020B305EA0031A766 /* UserInfo.swift */,
+                46A5DEB62163BAC20069082D /* WashSymbolDescriptions.swift */,
+            );
+            path = Model;
+            sourceTree = "<group>";
+        };
+        CC92F2EC20AC9E04006C04AB /* Views */ = {
+            isa = PBXGroup;
+            children = (
+                CC92F2ED20AC9E2D006C04AB /* ClosetCollectionViewCell.swift */,
+                D30286C220F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift */,
+                46F5809021413B8A00B6BCA0 /* ShopTableViewCell.swift */,
+                46EA794F2162284F003FEEFB /* WashingSymbolTableViewCell.swift */,
+                668900CC20C0815800D673EC /* ClosetListTableViewCell.swift */,
+            );
+            path = Views;
+            sourceTree = "<group>";
+        };
+        CCC295DC207F93F80021BF8E = {
+            isa = PBXGroup;
+            children = (
+                CC233A17210AFE9400F6DCDC /* ApiGatewayMac.framework */,
+                0E82EB6121B585530013797F /* ApiGatewayMac.framework */,
+                46E865A521B94F630004D819 /* ApiGatewayMac.framework */,
+                CCC295E7207F93F80021BF8E /* LaundryDay */,
+                CCC295E6207F93F80021BF8E /* Products */,
+                437011E8A9648C9C3432886F /* Pods */,
+                3CED4B3B08C7710FE675B92C /* Frameworks */,
+            );
+            sourceTree = "<group>";
+        };
+        CCC295E6207F93F80021BF8E /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                CCC295E5207F93F80021BF8E /* LaundryDay.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        CCC295E7207F93F80021BF8E /* LaundryDay */ = {
+            isa = PBXGroup;
+            children = (
+                CC77448A20B58C090086464A /* GoogleService-Info.plist */,
+                CC92F2EC20AC9E04006C04AB /* Views */,
+                CC92F2E920AC8633006C04AB /* Model */,
+                CC825A712081E6B600A4BDCC /* ViewControllers */,
+                CCC295E8207F93F80021BF8E /* AppDelegate.swift */,
+                CCC295EF207F93F90021BF8E /* Assets.xcassets */,
+                CCC295F4207F93F90021BF8E /* Info.plist */,
+                CC825A702081E69400A4BDCC /* Storyboards */,
+                0E82EB6621B587250013797F /* boardData.swift */,
+                0E82EB7021B588480013797F /* boardTimelineTableViewCell.swift */,
+                CC831C30208F1CAE002798A7 /* AuthService.swift */,
+                CCE51160210ED90100C726B7 /* NSearchApi.swift */,
+                CC728F4820908962003B3805 /* Config.swift */,
+                CCC83D6A20B2FEA30031A766 /* Api.swift */,
+                CCA8D65E20B331D000A33D90 /* HelperService.swift */,
+                D3B9AAEF210086200004B4D9 /* TimeDelay.swift */,
+                CCC83D6E20B304640031A766 /* UserApi.swift */,
+                CCC83D6C20B2FEBB0031A766 /* MyItemsApi.swift */,
+                66C5E3E920C1744500314391 /* MyClosetsApi.swift */,
+                CCA8D65A20B3225400A33D90 /* ClothesApi.swift */,
+                D301470920F74A4C000BB5CE /* SSCheckMark.swift */,
+                66C5E3E520C1621E00314391 /* ClosetsApi.swift */,
+                CC233A21210B078300F6DCDC /* naverMapForSwift.h */,
+                CC39F03F21114AD500573235 /* LaundryShop.swift */,
+            );
+            path = LaundryDay;
+            sourceTree = "<group>";
+        };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CCC295E4207F93F80021BF8E /* LaundryDay */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CCC295F7207F93F90021BF8E /* Build configuration list for PBXNativeTarget "LaundryDay" */;
-			buildPhases = (
-				BA77470AD17FCA4ADB5C39A2 /* [CP] Check Pods Manifest.lock */,
-				CCC295E1207F93F80021BF8E /* Sources */,
-				CCC295E2207F93F80021BF8E /* Frameworks */,
-				CCC295E3207F93F80021BF8E /* Resources */,
-				4E6E6716E6ABE0DF9B61C57A /* [CP] Embed Pods Frameworks */,
-				CC233A1D210B00B200F6DCDC /* Run Script */,
-				0E82EB6421B585540013797F /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LaundryDay;
-			productName = LaundryDay;
-			productReference = CCC295E5207F93F80021BF8E /* LaundryDay.app */;
-			productType = "com.apple.product-type.application";
-		};
+        CCC295E4207F93F80021BF8E /* LaundryDay */ = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = CCC295F7207F93F90021BF8E /* Build configuration list for PBXNativeTarget "LaundryDay" */;
+            buildPhases = (
+                BA77470AD17FCA4ADB5C39A2 /* [CP] Check Pods Manifest.lock */,
+                CCC295E1207F93F80021BF8E /* Sources */,
+                CCC295E2207F93F80021BF8E /* Frameworks */,
+                CCC295E3207F93F80021BF8E /* Resources */,
+                4E6E6716E6ABE0DF9B61C57A /* [CP] Embed Pods Frameworks */,
+                CC233A1D210B00B200F6DCDC /* Run Script */,
+                0E82EB6421B585540013797F /* Embed Frameworks */,
+            );
+            buildRules = (
+            );
+            dependencies = (
+            );
+            name = LaundryDay;
+            productName = LaundryDay;
+            productReference = CCC295E5207F93F80021BF8E /* LaundryDay.app */;
+            productType = "com.apple.product-type.application";
+        };
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CCC295DD207F93F80021BF8E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = MBP03;
-				TargetAttributes = {
-					CCC295E4207F93F80021BF8E = {
-						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 0940;
-					};
-				};
-			};
-			buildConfigurationList = CCC295E0207F93F80021BF8E /* Build configuration list for PBXProject "LaundryDay" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CCC295DC207F93F80021BF8E;
-			productRefGroup = CCC295E6207F93F80021BF8E /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CCC295E4207F93F80021BF8E /* LaundryDay */,
-			);
-		};
+        CCC295DD207F93F80021BF8E /* Project object */ = {
+            isa = PBXProject;
+            attributes = {
+                LastSwiftUpdateCheck = 0930;
+                LastUpgradeCheck = 0930;
+                ORGANIZATIONNAME = MBP03;
+                TargetAttributes = {
+                    CCC295E4207F93F80021BF8E = {
+                        CreatedOnToolsVersion = 9.3;
+                        LastSwiftMigration = 0940;
+                    };
+                };
+            };
+            buildConfigurationList = CCC295E0207F93F80021BF8E /* Build configuration list for PBXProject "LaundryDay" */;
+            compatibilityVersion = "Xcode 9.3";
+            developmentRegion = en;
+            hasScannedForEncodings = 0;
+            knownRegions = (
+                en,
+                Base,
+            );
+            mainGroup = CCC295DC207F93F80021BF8E;
+            productRefGroup = CCC295E6207F93F80021BF8E /* Products */;
+            projectDirPath = "";
+            projectRoot = "";
+            targets = (
+                CCC295E4207F93F80021BF8E /* LaundryDay */,
+            );
+        };
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CCC295E3207F93F80021BF8E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CCC295F3207F93F90021BF8E /* LaunchScreen.storyboard in Resources */,
-				CC77448B20B58C090086464A /* GoogleService-Info.plist in Resources */,
-				CC825A672081E51000A4BDCC /* Main.storyboard in Resources */,
-				CC825A532081D43800A4BDCC /* Start.storyboard in Resources */,
-				CC825A692081E62300A4BDCC /* Closet.storyboard in Resources */,
-				CC825A6F2081E66200A4BDCC /* Profile.storyboard in Resources */,
-				CCC295F0207F93F90021BF8E /* Assets.xcassets in Resources */,
-				CC825A6D2081E65500A4BDCC /* Board.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+        CCC295E3207F93F80021BF8E /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                CCC295F3207F93F90021BF8E /* LaunchScreen.storyboard in Resources */,
+                CC77448B20B58C090086464A /* GoogleService-Info.plist in Resources */,
+                CC825A672081E51000A4BDCC /* Main.storyboard in Resources */,
+                CC825A532081D43800A4BDCC /* Start.storyboard in Resources */,
+                CC825A692081E62300A4BDCC /* Closet.storyboard in Resources */,
+                CC825A6F2081E66200A4BDCC /* Profile.storyboard in Resources */,
+                CCC295F0207F93F90021BF8E /* Assets.xcassets in Resources */,
+                CC825A6D2081E65500A4BDCC /* Board.storyboard in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E6E6716E6ABE0DF9B61C57A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA77470AD17FCA4ADB5C39A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LaundryDay-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC233A1D210B00B200F6DCDC /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Scripts/strip-frameworks.sh\n";
-		};
+        4E6E6716E6ABE0DF9B61C57A /* [CP] Embed Pods Frameworks */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${SRCROOT}/Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay-frameworks.sh",
+                "${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+                "${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+                "${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+                "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+                "${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+                "${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+            );
+            name = "[CP] Embed Pods Frameworks";
+            outputPaths = (
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+                "${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaundryDay/Pods-LaundryDay-frameworks.sh\"\n";
+            showEnvVarsInLog = 0;
+        };
+        BA77470AD17FCA4ADB5C39A2 /* [CP] Check Pods Manifest.lock */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+                "${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+                "${PODS_ROOT}/Manifest.lock",
+            );
+            name = "[CP] Check Pods Manifest.lock";
+            outputPaths = (
+                "$(DERIVED_FILE_DIR)/Pods-LaundryDay-checkManifestLockResult.txt",
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+            showEnvVarsInLog = 0;
+        };
+        CC233A1D210B00B200F6DCDC /* Run Script */ = {
+            isa = PBXShellScriptBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+            );
+            inputPaths = (
+            );
+            name = "Run Script";
+            outputPaths = (
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+            shellPath = /bin/sh;
+            shellScript = "/Users/zzna/Documents/zzna/개발/ios/maps.ios-master/Scripts/strip-frameworks.sh\n";
+        };
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CCC295E1207F93F80021BF8E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */,
-				46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */,
-				CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */,
-				668900CD20C0815800D673EC /* ClosetListTableViewCell.swift in Sources */,
-				CC825A572081DE8800A4BDCC /* SignUpViewController.swift in Sources */,
-				46F5809121413B8A00B6BCA0 /* ShopTableViewCell.swift in Sources */,
-				46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */,
-				D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */,
+        CCC295E1207F93F80021BF8E /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                46F5808B214123F000B6BCA0 /* SearchTheShopViewController.swift in Sources */,
+                46F58089214123DD00B6BCA0 /* AddClothesViewController.swift in Sources */,
+                CC7A2CFA210DCE6500FFF235 /* NaverMapViewController.swift in Sources */,
+                668900CD20C0815800D673EC /* ClosetListTableViewCell.swift in Sources */,
+                CC825A572081DE8800A4BDCC /* SignUpViewController.swift in Sources */,
+                46F5809121413B8A00B6BCA0 /* ShopTableViewCell.swift in Sources */,
+                46EA794E2162281F003FEEFB /* WashingSymbolViewController.swift in Sources */,
+                D39B77022108752000C74FCB /* DetailEditingViewController.swift in Sources */,
 				0E939AA921B99BC200C037F3 /* boardTimelineTableViewController.swift in Sources */,
-				CCA8D65F20B331D000A33D90 /* HelperService.swift in Sources */,
-				CC7A2CFC210DD80000FFF235 /* MoreNMapViewController.swift in Sources */,
-				CC825A552081DE6800A4BDCC /* SignInViewController.swift in Sources */,
-				66C5E3E820C167F300314391 /* Closet.swift in Sources */,
-				CC728F4920908963003B3805 /* Config.swift in Sources */,
-				46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */,
-				CC92F2EE20AC9E2D006C04AB /* ClosetCollectionViewCell.swift in Sources */,
-				D3B9AAF0210086200004B4D9 /* TimeDelay.swift in Sources */,
-				D30286C120F60CCF0054D6B2 /* AddClothesToClosetViewController.swift in Sources */,
-				CCC83D6F20B304640031A766 /* UserApi.swift in Sources */,
-				46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */,
-				CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */,
-				CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */,
+                CCA8D65F20B331D000A33D90 /* HelperService.swift in Sources */,
+                CC7A2CFC210DD80000FFF235 /* MoreNMapViewController.swift in Sources */,
+                CC825A552081DE6800A4BDCC /* SignInViewController.swift in Sources */,
+                66C5E3E820C167F300314391 /* Closet.swift in Sources */,
+                CC728F4920908963003B3805 /* Config.swift in Sources */,
+                46A5DEB72163BAC20069082D /* WashSymbolDescriptions.swift in Sources */,
+                CC92F2EE20AC9E2D006C04AB /* ClosetCollectionViewCell.swift in Sources */,
+                D3B9AAF0210086200004B4D9 /* TimeDelay.swift in Sources */,
+                D30286C120F60CCF0054D6B2 /* AddClothesToClosetViewController.swift in Sources */,
+                CCC83D6F20B304640031A766 /* UserApi.swift in Sources */,
+                46EA79502162284F003FEEFB /* WashingSymbolTableViewCell.swift in Sources */,
+                CC825A5D2081E30B00A4BDCC /* ClosetViewController.swift in Sources */,
+                CCA8D65B20B3225400A33D90 /* ClothesApi.swift in Sources */,
 				0E939AAA21B99BCD00C037F3 /* boardUploadViewController.swift in Sources */,
-				668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */,
-				668900C020C04B9300D673EC /* DetailViewController.swift in Sources */,
-				CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */,
-				CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */,
-				CC825A632081E39A00A4BDCC /* ProfileViewController.swift in Sources */,
-				D30286C320F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift in Sources */,
+                668900CF20C0842A00D673EC /* ClosetListViewController.swift in Sources */,
+                668900C020C04B9300D673EC /* DetailViewController.swift in Sources */,
+                CCC83D6B20B2FEA30031A766 /* Api.swift in Sources */,
+                CCC83D7120B305EA0031A766 /* UserInfo.swift in Sources */,
+                CC825A632081E39A00A4BDCC /* ProfileViewController.swift in Sources */,
+                D30286C320F614090054D6B2 /* AddClothesToClosetCollectionViewCell.swift in Sources */,
 				0E939AAB21B99BD400C037F3 /* boardData.swift in Sources */,
-				CCC295E9207F93F80021BF8E /* AppDelegate.swift in Sources */,
-				CC825A612081E38900A4BDCC /* BoardViewController.swift in Sources */,
-				D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */,
-				66C5E3EA20C1744500314391 /* MyClosetsApi.swift in Sources */,
-				CC92F2EB20AC8649006C04AB /* Clothes.swift in Sources */,
-				CC831C31208F1CAE002798A7 /* AuthService.swift in Sources */,
-				D301470A20F74A4C000BB5CE /* SSCheckMark.swift in Sources */,
-				CCE51161210ED90100C726B7 /* NSearchApi.swift in Sources */,
+                CCC295E9207F93F80021BF8E /* AppDelegate.swift in Sources */,
+                CC825A612081E38900A4BDCC /* BoardViewController.swift in Sources */,
+                D30289F32111BB9700D725EB /* EditClothesViewController.swift in Sources */,
+                66C5E3EA20C1744500314391 /* MyClosetsApi.swift in Sources */,
+                CC92F2EB20AC8649006C04AB /* Clothes.swift in Sources */,
+                CC831C31208F1CAE002798A7 /* AuthService.swift in Sources */,
+                D301470A20F74A4C000BB5CE /* SSCheckMark.swift in Sources */,
+                CCE51161210ED90100C726B7 /* NSearchApi.swift in Sources */,
 				0E939AAC21B99BD700C037F3 /* boardTimelineTableViewCell.swift in Sources */,
-				66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */,
-				CC39F04021114AD500573235 /* LaundryShop.swift in Sources */,
-				CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+                66C5E3E620C1621E00314391 /* ClosetsApi.swift in Sources */,
+                CC39F04021114AD500573235 /* LaundryShop.swift in Sources */,
+                CCC83D6D20B2FEBB0031A766 /* MyItemsApi.swift in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCC295F2207F93F90021BF8E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+        CCC295F1207F93F90021BF8E /* LaunchScreen.storyboard */ = {
+            isa = PBXVariantGroup;
+            children = (
+                CCC295F2207F93F90021BF8E /* Base */,
+            );
+            name = LaunchScreen.storyboard;
+            sourceTree = "<group>";
+        };
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		CCC295F5207F93F90021BF8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		CCC295F6207F93F90021BF8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CCC295F8207F93F90021BF8E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
-				);
-				INFOPLIST_FILE = LaundryDay/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"icucore\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseAuth\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseDatabase\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseNanoPB\"",
-					"-framework",
-					"\"FirebaseStorage\"",
-					"-framework",
-					"\"GTMSessionFetcher\"",
-					"-framework",
-					"\"GoogleToolboxForMac\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"ProgressHUD\"",
-					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"leveldb\"",
-					"-framework",
-					"\"nanopb\"",
-					"-objC",
-					"-lxml2",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+        CCC295F5207F93F90021BF8E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                ENABLE_TESTABILITY = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_DYNAMIC_NO_PIC = NO;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_OPTIMIZATION_LEVEL = 0;
+                GCC_PREPROCESSOR_DEFINITIONS = (
+                    "DEBUG=1",
+                    "$(inherited)",
+                );
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+                MTL_ENABLE_DEBUG_INFO = YES;
+                ONLY_ACTIVE_ARCH = YES;
+                SDKROOT = iphoneos;
+                SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            };
+            name = Debug;
+        };
+        CCC295F6207F93F90021BF8E /* Release */ = {
+            isa = XCBuildConfiguration;
+            buildSettings = {
+                ALWAYS_SEARCH_USER_PATHS = NO;
+                CLANG_ANALYZER_NONNULL = YES;
+                CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+                CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+                CLANG_CXX_LIBRARY = "libc++";
+                CLANG_ENABLE_MODULES = YES;
+                CLANG_ENABLE_OBJC_ARC = YES;
+                CLANG_ENABLE_OBJC_WEAK = YES;
+                CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+                CLANG_WARN_BOOL_CONVERSION = YES;
+                CLANG_WARN_COMMA = YES;
+                CLANG_WARN_CONSTANT_CONVERSION = YES;
+                CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+                CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+                CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+                CLANG_WARN_EMPTY_BODY = YES;
+                CLANG_WARN_ENUM_CONVERSION = YES;
+                CLANG_WARN_INFINITE_RECURSION = YES;
+                CLANG_WARN_INT_CONVERSION = YES;
+                CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+                CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+                CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+                CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+                CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+                CLANG_WARN_STRICT_PROTOTYPES = YES;
+                CLANG_WARN_SUSPICIOUS_MOVE = YES;
+                CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+                CLANG_WARN_UNREACHABLE_CODE = YES;
+                CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+                CODE_SIGN_IDENTITY = "iPhone Developer";
+                COPY_PHASE_STRIP = NO;
+                DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+                ENABLE_NS_ASSERTIONS = NO;
+                ENABLE_STRICT_OBJC_MSGSEND = YES;
+                GCC_C_LANGUAGE_STANDARD = gnu11;
+                GCC_NO_COMMON_BLOCKS = YES;
+                GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+                GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+                GCC_WARN_UNDECLARED_SELECTOR = YES;
+                GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+                GCC_WARN_UNUSED_FUNCTION = YES;
+                GCC_WARN_UNUSED_VARIABLE = YES;
+                IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+                MTL_ENABLE_DEBUG_INFO = NO;
+                SDKROOT = iphoneos;
+                SWIFT_COMPILATION_MODE = wholemodule;
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                VALIDATE_PRODUCT = YES;
+            };
+            name = Release;
+        };
+        CCC295F8207F93F90021BF8E /* Debug */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = 3B3389B95CD66B5797DF95CE /* Pods-LaundryDay.debug.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                FRAMEWORK_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "$(PROJECT_DIR)",
+                    "\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
+                );
+                INFOPLIST_FILE = LaundryDay/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                OTHER_LDFLAGS = (
+                    "$(inherited)",
+                    "-ObjC",
+                    "-l\"c++\"",
+                    "-l\"icucore\"",
+                    "-l\"sqlite3\"",
+                    "-l\"z\"",
+                    "-framework",
+                    "\"CFNetwork\"",
+                    "-framework",
+                    "\"CoreGraphics\"",
+                    "-framework",
+                    "\"FirebaseAnalytics\"",
+                    "-framework",
+                    "\"FirebaseAuth\"",
+                    "-framework",
+                    "\"FirebaseCore\"",
+                    "-framework",
+                    "\"FirebaseCoreDiagnostics\"",
+                    "-framework",
+                    "\"FirebaseDatabase\"",
+                    "-framework",
+                    "\"FirebaseInstanceID\"",
+                    "-framework",
+                    "\"FirebaseNanoPB\"",
+                    "-framework",
+                    "\"FirebaseStorage\"",
+                    "-framework",
+                    "\"GTMSessionFetcher\"",
+                    "-framework",
+                    "\"GoogleToolboxForMac\"",
+                    "-framework",
+                    "\"MobileCoreServices\"",
+                    "-framework",
+                    "\"ProgressHUD\"",
+                    "-framework",
+                    "\"SDWebImage\"",
+                    "-framework",
+                    "\"SafariServices\"",
+                    "-framework",
+                    "\"Security\"",
+                    "-framework",
+                    "\"StoreKit\"",
+                    "-framework",
+                    "\"SystemConfiguration\"",
+                    "-framework",
+                    "\"leveldb\"",
+                    "-framework",
+                    "\"nanopb\"",
+                    "-objC",
+                    "-lxml2",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
+                PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CCC295F9207F93F90021BF8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
-				);
-				INFOPLIST_FILE = LaundryDay/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"icucore\"",
-					"-l\"sqlite3\"",
-					"-l\"z\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"FirebaseAnalytics\"",
-					"-framework",
-					"\"FirebaseAuth\"",
-					"-framework",
-					"\"FirebaseCore\"",
-					"-framework",
-					"\"FirebaseCoreDiagnostics\"",
-					"-framework",
-					"\"FirebaseDatabase\"",
-					"-framework",
-					"\"FirebaseInstanceID\"",
-					"-framework",
-					"\"FirebaseNanoPB\"",
-					"-framework",
-					"\"FirebaseStorage\"",
-					"-framework",
-					"\"GTMSessionFetcher\"",
-					"-framework",
-					"\"GoogleToolboxForMac\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"ProgressHUD\"",
-					"-framework",
-					"\"SDWebImage\"",
-					"-framework",
-					"\"SafariServices\"",
-					"-framework",
-					"\"Security\"",
-					"-framework",
-					"\"StoreKit\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"leveldb\"",
-					"-framework",
-					"\"nanopb\"",
-					"-objC",
-					"-lxml2",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+                SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Debug;
+        };
+        CCC295F9207F93F90021BF8E /* Release */ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = E7DE90ADAC7410455027245B /* Pods-LaundryDay.release.xcconfig */;
+            buildSettings = {
+                ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                CLANG_ENABLE_MODULES = YES;
+                CODE_SIGN_STYLE = Automatic;
+                FRAMEWORK_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "$(PROJECT_DIR)",
+                    "\"$(SRCROOT)/../maps.ios-master/Frameworks\"",
+                );
+                INFOPLIST_FILE = LaundryDay/Info.plist;
+                LD_RUNPATH_SEARCH_PATHS = (
+                    "$(inherited)",
+                    "@executable_path/Frameworks",
+                );
+                OTHER_LDFLAGS = (
+                    "$(inherited)",
+                    "-ObjC",
+                    "-l\"c++\"",
+                    "-l\"icucore\"",
+                    "-l\"sqlite3\"",
+                    "-l\"z\"",
+                    "-framework",
+                    "\"CFNetwork\"",
+                    "-framework",
+                    "\"CoreGraphics\"",
+                    "-framework",
+                    "\"FirebaseAnalytics\"",
+                    "-framework",
+                    "\"FirebaseAuth\"",
+                    "-framework",
+                    "\"FirebaseCore\"",
+                    "-framework",
+                    "\"FirebaseCoreDiagnostics\"",
+                    "-framework",
+                    "\"FirebaseDatabase\"",
+                    "-framework",
+                    "\"FirebaseInstanceID\"",
+                    "-framework",
+                    "\"FirebaseNanoPB\"",
+                    "-framework",
+                    "\"FirebaseStorage\"",
+                    "-framework",
+                    "\"GTMSessionFetcher\"",
+                    "-framework",
+                    "\"GoogleToolboxForMac\"",
+                    "-framework",
+                    "\"MobileCoreServices\"",
+                    "-framework",
+                    "\"ProgressHUD\"",
+                    "-framework",
+                    "\"SDWebImage\"",
+                    "-framework",
+                    "\"SafariServices\"",
+                    "-framework",
+                    "\"Security\"",
+                    "-framework",
+                    "\"StoreKit\"",
+                    "-framework",
+                    "\"SystemConfiguration\"",
+                    "-framework",
+                    "\"leveldb\"",
+                    "-framework",
+                    "\"nanopb\"",
+                    "-objC",
+                    "-lxml2",
+                );
+                PRODUCT_BUNDLE_IDENTIFIER = com.laundryday.LaundryDay;
+                PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/zzna/Documents/zzna/개발/ios/laundryday/LaundryDay/naverMapForSwift.h";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+                SWIFT_VERSION = 4.0;
+                TARGETED_DEVICE_FAMILY = "1,2";
+            };
+            name = Release;
+        };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CCC295E0207F93F80021BF8E /* Build configuration list for PBXProject "LaundryDay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCC295F5207F93F90021BF8E /* Debug */,
-				CCC295F6207F93F90021BF8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CCC295F7207F93F90021BF8E /* Build configuration list for PBXNativeTarget "LaundryDay" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CCC295F8207F93F90021BF8E /* Debug */,
-				CCC295F9207F93F90021BF8E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+        CCC295E0207F93F80021BF8E /* Build configuration list for PBXProject "LaundryDay" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CCC295F5207F93F90021BF8E /* Debug */,
+                CCC295F6207F93F90021BF8E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
+        CCC295F7207F93F90021BF8E /* Build configuration list for PBXNativeTarget "LaundryDay" */ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (
+                CCC295F8207F93F90021BF8E /* Debug */,
+                CCC295F9207F93F90021BF8E /* Release */,
+            );
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Release;
+        };
 /* End XCConfigurationList section */
-	};
-	rootObject = CCC295DD207F93F80021BF8E /* Project object */;
+    };
+    rootObject = CCC295DD207F93F80021BF8E /* Project object */;
 }
