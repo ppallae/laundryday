@@ -21,6 +21,11 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
         uploadPost()
     }
     
+    @IBAction func cancelButton_TUI(_ sender: Any) {
+        //ClosetListViewController.removeViewController(childVC: self)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     //var image = UIImage() //AddNavigationController에서 넘기는 image를 받을 변수
     let placeHolder = "개인 정보를 요구하는 행위는 금지됩니다." //아무 글짜도 없을 경우 보여주는 것
     let titleBeginner = "제목을 입력해주세요"
