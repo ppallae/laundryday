@@ -44,8 +44,14 @@ class ProfileViewController: UIViewController{
         super.viewDidLoad()
         //userInfoView.dataSource = self
         
+        
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isHidden = false
+        
         //네비게이션 컬러
-        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 72/255, green: 299/255, blue: 149/255, alpha: 1)
+        //self.navigationController?.navigationBar.backgroundColor = UIColor(red: 72/255, green: 299/255, blue: 149/255, alpha: 1)
         fetchUser()
     }
     

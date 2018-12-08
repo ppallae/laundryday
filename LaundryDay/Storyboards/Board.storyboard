@@ -128,7 +128,9 @@
                             <outlet property="delegate" destination="Baj-gI-Lui" id="vtr-AV-8gi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Xo1-7D-Paa"/>
+                    <navigationItem key="navigationItem" id="Xo1-7D-Paa">
+                        <nil key="title"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qj5-de-d1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +140,9 @@
         <scene sceneID="EeR-Mt-CTb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SsS-Dl-u71" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tab_board_selected" id="NcH-bf-ESj"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cXg-FE-cFx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -153,4 +157,7 @@
             <point key="canvasLocation" x="3328.8000000000002" y="1790.5547226386807"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="tab_board_selected" width="25" height="25"/>
+    </resources>
 </document>

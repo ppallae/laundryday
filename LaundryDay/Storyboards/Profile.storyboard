@@ -43,17 +43,6 @@
                                             <segue destination="d4W-DQ-MiR" kind="show" id="cvj-MW-0LX"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q6E-Py-grh">
-                                        <rect key="frame" x="0.0" y="498" width="375" height="130"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="art_1524014029" translatesAutoresizingMaskIntoConstraints="NO" id="ZxG-V4-Z77">
-                                                <rect key="frame" x="25" y="0.0" width="325" height="130"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozs-v1-CBs">
                                         <rect key="frame" x="12" y="24" width="73" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -162,8 +151,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-Z0-fPl">
-                                        <rect key="frame" x="62.5" y="249" width="250" height="120"/>
+                                    <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-Z0-fPl">
+                                        <rect key="frame" x="20" y="249" width="335" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="120" id="YNJ-gr-lld"/>
                                             <constraint firstAttribute="width" constant="250" id="w9W-p6-p72"/>
@@ -467,7 +456,7 @@
             <objects>
                 <viewController id="4DV-Jd-CYg" customClass="NaverMapViewController" customModule="LaundryDay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDj-nz-Xco">
-                        <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Aoq-IT-z8Z"/>
@@ -494,7 +483,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="art_1524014029" width="330" height="145.19999694824219"/>
-        <image name="like" width="46" height="41"/>
+        <image name="like" width="47" height="47"/>
+        <image name="tab_profile_selected" width="25" height="25"/>
     </resources>
 </document>

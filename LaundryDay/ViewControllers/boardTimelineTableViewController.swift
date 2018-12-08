@@ -33,6 +33,13 @@ class boardTimelineTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isHidden = false
+        
+        
         /*
         boardUploadController = storyBoard.instantiateInitialViewController(withIdentifier: "boardUploadViewController") as! boardUploadViewController
         boardUploadController.navigationItem.title = "업로드"

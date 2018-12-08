@@ -21,6 +21,12 @@ class SearchTheShopViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         ShopList.dataSource = self
         ShopList.delegate = self
+        
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isHidden = false
+        
         /*
         let button = UIButton(type: UIButtonType.system)
         button.frame = CGRect(x: 50, y:100, width:150, height:30)
