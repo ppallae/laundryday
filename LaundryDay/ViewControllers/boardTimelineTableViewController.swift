@@ -33,6 +33,13 @@ class boardTimelineTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.setBackgroundImage(UIColor(red: 72/255, green: 199/255, blue: 149/255, alpha: 1).as1ptImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.isHidden = false
+        
+        
         /*
         boardUploadController = storyBoard.instantiateInitialViewController(withIdentifier: "boardUploadViewController") as! boardUploadViewController
         boardUploadController.navigationItem.title = "업로드"
@@ -40,10 +47,7 @@ class boardTimelineTableViewController: UITableViewController {
         ref = Database.database().reference()    //Firebase Database 루트를 가리키는 레퍼런스
         storageRef = Storage.storage().reference()    //Firebase Storage 루트를 가리키는 레퍼런스
         
-        
-        
-        
-        loadPosts()     //Firebase에서 포스트들을 불러들임
+        loadPosts()//Firebase에서 포스트들을 불러들임
         
         
         

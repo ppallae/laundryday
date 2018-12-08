@@ -21,6 +21,11 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
         uploadPost()
     }
     
+    @IBAction func cancelButton_TUI(_ sender: Any) {
+        //ClosetListViewController.removeViewController(childVC: self)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     //var image = UIImage() //AddNavigationController에서 넘기는 image를 받을 변수
     let placeHolder = "개인 정보를 요구하는 행위는 금지됩니다." //아무 글짜도 없을 경우 보여주는 것
     let titleBeginner = "제목을 입력해주세요"
@@ -37,6 +42,9 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
         
         self.TextView.delegate = self
         textViewDidEndEditing(TextView)
+        //self.TitleView.delegate = self
+        //titleViewDidEndEditing(TitleView)
+        
         var tapDismiss = UITapGestureRecognizer(target:self,action:"dismissKeyboard")
         self.view.addGestureRecognizer(tapDismiss)
         
@@ -111,7 +119,7 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
     }
     @objc func uploadPost(){
         var curRef = self.ref?.child("posts").childByAutoId() //Database 루트 아래 posts 아래 새로운 게시글을 참조한다.
-        if self.TextView.text != placeHolder{ //PlaceHolder 유무에 따른 글 업로드
+        if (self.TextView.text != placeHolder) { //PlaceHolder 유무에 따른 글 업로드
             curRef?.child("text").setValue(self.TextView.text) //PlaceHolder와 같을 때 새로운 게시글의 text를 self.TextView.text로 지정
             curRef?.child("title").setValue(self.TitleView.text)
             curRef?.child("userName").setValue(self.currentUserName)
@@ -119,11 +127,17 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
             curRef?.child("text").setValue("") //PlaceHolder와 같을 때 새로운 게시글의 text를 빈 텍스트로 지정.
             curRef?.child("title").setValue("")
             curRef?.child("userName").setValue(self.currentUserName)
-        }
+        }/*
+        if self.TitleView.text != titleBeginner {
+            curRef?.child("title").setValue(self.TitleView.text)
+        }else{
+            curRef?.child("title").setValue("")
+        }*/
         
         self.TextView.text = "" //한번 업로드 한 경우 다음 차례에 uploadViewController가 표시될 때 빈 텍스트만 보이도록 한다.
         self.TitleView.text = ""
         textViewDidEndEditing(TextView)
+        //titleViewDidEndEditing(TitleView)
         
         
         let date = Date()
@@ -144,7 +158,7 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
                 // Metadata는 size, content-type, download URL과 같은 컨텐트의 메타데이터를 가진다
             }
         }) */
-        //self.tabBarController?.selectedIndex = 0 //탭을 전환해 본래 타임라인으로 돌아간다.
+        
     }
 
 }

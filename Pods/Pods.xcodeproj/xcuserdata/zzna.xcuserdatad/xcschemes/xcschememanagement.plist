@@ -12,7 +12,7 @@
 		<key>GTMSessionFetcher.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 		<key>GoogleToolboxForMac.xcscheme</key>
 		<dict>
@@ -22,7 +22,7 @@
 		<key>GoogleToolboxForMac.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-LaundryDay.xcscheme</key>
 		<dict>
