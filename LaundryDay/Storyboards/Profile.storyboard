@@ -190,44 +190,35 @@
                                 <rect key="frame" x="0.0" y="455" width="375" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPostsTableViewCell" rowHeight="74" id="e6t-Xp-dUU" customClass="MyPostsTableViewCell" customModule="LaundryDay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="74"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyPostsTableViewCell" rowHeight="67" id="e6t-Xp-dUU" customClass="MyPostsTableViewCell" customModule="LaundryDay" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="67"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e6t-Xp-dUU" id="cCN-m2-HD8">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="66.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="544-8j-286">
-                                                    <rect key="frame" x="15" y="11" width="44" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <rect key="frame" x="15" y="11" width="39" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIs-bI-sYg">
-                                                    <rect key="frame" x="15" y="40" width="38" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-C7-Cwa">
-                                                    <rect key="frame" x="324" y="11" width="36" height="17"/>
+                                                    <rect key="frame" x="15" y="37" width="35.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RIs-bI-sYg" firstAttribute="top" secondItem="544-8j-286" secondAttribute="bottom" constant="8" id="BYD-6I-tL5"/>
+                                                <constraint firstAttribute="bottom" secondItem="RIs-bI-sYg" secondAttribute="bottom" constant="12.5" id="Wto-JA-Vfv"/>
                                                 <constraint firstItem="RIs-bI-sYg" firstAttribute="leading" secondItem="544-8j-286" secondAttribute="leading" id="XGy-9f-fv5"/>
-                                                <constraint firstItem="ohl-C7-Cwa" firstAttribute="trailing" secondItem="cCN-m2-HD8" secondAttribute="trailingMargin" id="ZXW-jQ-gh5"/>
                                                 <constraint firstItem="544-8j-286" firstAttribute="top" secondItem="cCN-m2-HD8" secondAttribute="topMargin" id="oxG-53-Llc"/>
                                                 <constraint firstItem="544-8j-286" firstAttribute="leading" secondItem="cCN-m2-HD8" secondAttribute="leadingMargin" id="soy-Fm-U48"/>
-                                                <constraint firstAttribute="bottom" secondItem="RIs-bI-sYg" secondAttribute="bottom" constant="15.5" id="tm6-HY-fGP"/>
-                                                <constraint firstItem="ohl-C7-Cwa" firstAttribute="top" secondItem="544-8j-286" secondAttribute="top" id="vn5-tl-Bel"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dateLabel" destination="ohl-C7-Cwa" id="fOW-rw-1gX"/>
                                             <outlet property="postTextLabel" destination="RIs-bI-sYg" id="uvg-5v-wO4"/>
                                             <outlet property="titleLabel" destination="544-8j-286" id="FPU-SF-yzB"/>
                                         </connections>

@@ -16,6 +16,7 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
     @IBOutlet weak var TextView: UITextView! //사용자가 글을 작성하는 textview
     @IBOutlet weak var TitleView: UITextView! //사용자가 제목을 작성하는 textview
     //@IBOutlet weak var boardCompleteButton: UIButton! //글 작성 완료버튼
+    @IBOutlet weak var uploadBtn: UIButton!
     
     @IBAction func goPosting(_Sender: AnyObject) {
         uploadPost()
@@ -57,16 +58,15 @@ class boardUploadViewController: UIViewController, UITextViewDelegate {
             self.currentUserName = user.userName
             self.currentUserId = user.uid
         })
- 
+        
         
         //let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action:#selector(uploadPost))
         //self.navigationItem.rightBarButtonItem = addButton
         
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+   
     
     //MARK: - TextView PlaceHolder
     func dismissKeyboard(){

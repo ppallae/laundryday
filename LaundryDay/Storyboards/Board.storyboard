@@ -64,7 +64,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxo-DF-YZk">
                                 <rect key="frame" x="37.5" y="484" width="140" height="40"/>
-                                <color key="backgroundColor" white="0.9279785156" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="AaU-Y5-pUI"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="bQ2-zq-vpR"/>
@@ -133,6 +133,7 @@
                     <connections>
                         <outlet property="TextView" destination="qP4-ma-ucI" id="Vr7-9L-I5H"/>
                         <outlet property="TitleView" destination="As0-gA-qV6" id="BIQ-6g-e3h"/>
+                        <outlet property="uploadBtn" destination="98R-oG-dJM" id="EzN-dg-z8z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lX4-fQ-DM9" userLabel="First Responder" sceneMemberID="firstResponder"/>
