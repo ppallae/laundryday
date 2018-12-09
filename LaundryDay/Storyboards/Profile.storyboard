@@ -28,6 +28,11 @@
                                             <constraint firstAttribute="height" constant="90" id="1ie-X3-dat"/>
                                             <constraint firstAttribute="width" constant="90" id="5XY-Wt-4TO"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azI-dN-qsp">
                                         <rect key="frame" x="326" y="189.5" width="37" height="29"/>
