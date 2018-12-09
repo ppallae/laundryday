@@ -32,6 +32,7 @@ h5 {
 	font-weight: 700;
 	line-height: 20px;
 }
+
 p {
 	font-size: 15px;
 }
@@ -155,7 +156,7 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #5ca9fb;
+	background: url(../img/intro-bg.jpg) center center no-repeat;
 	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
 	padding: 14px 34px;
 	letter-spacing: 1px;
@@ -288,7 +289,7 @@ header .intro-text {
 }
 /* Services Section */
 #services {
-	padding: 100px 0;
+	padding: 100px 10px;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	color: #fff;
 }
@@ -312,7 +313,7 @@ header .intro-text {
 	font-size: 42px;
 	width: 120px;
 	height: 120px;
-	padding: 40px 0;
+	padding: 40px ;
 	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
 	border-radius: 50%;
 	color: #fff;
@@ -329,9 +330,19 @@ header .intro-text {
 #services .service-desc {
 	margin-bottom: 40px;
 }
+#services .mobile {
+    margin-right:0;
+    margin-left:0;
+    margin-bottom: -80px;
+}
 /* Portfolio Section */
 #portfolio {
 	padding: 100px 0;
+    margin-bottom:70px;
+    margin-top:70px;
+    background: #f6f6f6;
+    
+    
 }
 .portfolio-item {
 	margin: 1px -15px 0 -14px;
