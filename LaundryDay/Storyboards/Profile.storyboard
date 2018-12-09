@@ -143,7 +143,7 @@
                         <viewLayoutGuide key="safeArea" id="Lcc-Z2-6kL"/>
                     </view>
                     <navigationItem key="navigationItem" id="TVh-Rx-KFa">
-                        <barButtonItem key="leftBarButtonItem" title="로그아웃" id="UTN-VA-pEZ">
+                        <barButtonItem key="rightBarButtonItem" title="logout" id="UTN-VA-pEZ">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="logOutButton_TUI:" destination="Zyf-l0-amK" id="kfZ-qG-5jK"/>
