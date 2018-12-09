@@ -34,6 +34,7 @@ class ProfileViewController: UIViewController{
     
     var posts = [Post]()                //테이블 뷰에 표시될 포스트들을 담는 배열
     var loadedPosts = [Post]()
+    var userEmail: String?
     
     
     var currentUser: UserInfo?{
@@ -43,7 +44,7 @@ class ProfileViewController: UIViewController{
     }
     
     func updateView() {
-        self.nameLabel.text = currentUser?.userName
+        self.nameLabel.text = (currentUser?.userName)! + "(" + self.userEmail! + ")"
         if let photoUrlString = currentUser?.profileImageUrl {
             let photoUrl = URL(string: photoUrlString)
             self.userImage.sd_setImage(with: photoUrl)
@@ -67,6 +68,7 @@ class ProfileViewController: UIViewController{
         fetchUser()
         
         fetchMyPosts()
+        
         
        
         
@@ -118,6 +120,7 @@ class ProfileViewController: UIViewController{
             self.currentUser = user
             //self.userInfoView.reloadData()
         }
+        self.userEmail = Auth.auth().currentUser?.email
     }
     
     //여기까지 정아 0729 프로필헤더뷰
