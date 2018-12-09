@@ -24,10 +24,10 @@ class MyPostsTableViewCell: UITableViewCell {
     func updateView() {
         titleLabel.text = post?.title
         postTextLabel.text = post?.text
-        if let dateStr = post?.date {
-            dateLabel.text = String(dateStr)
-        } else {
-            dateLabel.text = "0000/00/00"
-        }
+//        if let dateStr = post?.date {
+//            dateLabel.text = String(dateStr)
+//        } else {
+//            dateLabel.text = "0000/00/00"
+//        }
     }
 }
