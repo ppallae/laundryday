@@ -35,7 +35,8 @@ class ClosetViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = false
         navigationController?.navigationBar.isHidden = false
         
-        
+        let titleImageView = UIImageView(image: UIImage(named: "titleImage.png"))
+        self.navigationItem.titleView = titleImageView
         
         //collectionview 옆으로 띄우기
         collectionView.contentInset.right = 20

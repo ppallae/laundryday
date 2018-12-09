@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        self.tabBarController?.tabBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = false
         loadItem()
         addTapGesture()
         
