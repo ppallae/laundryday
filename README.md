@@ -3,5 +3,5 @@
 
 iod App development proj.
 
-@zzna
-@mincheongcho
+@jeongahsuh
+@minjeongcho
